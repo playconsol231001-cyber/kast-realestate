@@ -24,105 +24,90 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
 
   if (submitted) {
     return (
-      <div className="glass p-10 md:p-14 rounded-[3rem] text-center border-indigo-500/20 shadow-2xl">
-        <div className="w-24 h-24 bg-emerald-500/20 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
-          <svg className="w-12 h-12 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
-          </svg>
+      <div className="bg-white p-12 rounded-2xl text-center shadow-2xl border-2 border-emerald-500">
+        <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
         </div>
-        <h3 className="text-3xl font-[1000] text-white mb-4 italic uppercase tracking-tighter">Profile Initialized</h3>
-        <p className="text-slate-400 mb-8 font-medium">We've sent your digital setup link to <span className="text-white">+{formData.mobile}</span>. Your free trial is active.</p>
-        <button 
-          onClick={() => setSubmitted(false)}
-          className="text-indigo-400 font-black hover:text-indigo-300 transition-colors uppercase tracking-widest text-[10px] italic"
-        >
-          Request Another Link
-        </button>
+        <h3 className="text-2xl font-black mb-4 uppercase">Application Received!</h3>
+        <p className="text-slate-600 font-medium mb-8">Check your WhatsApp. We've sent you the next steps to complete your onboarding.</p>
+        <button className="text-indigo-600 font-black uppercase text-xs tracking-widest">Resend WhatsApp Invite</button>
       </div>
     );
   }
 
   return (
-    <div id={id} className="glass p-8 md:p-12 rounded-[2.5rem] border-white/10 shadow-3xl relative overflow-hidden group">
-      <div className="absolute top-0 right-0 p-12 -mr-12 -mt-12 bg-indigo-500/5 rounded-full blur-3xl"></div>
-      
-      <div className="mb-10 relative z-10">
-        <h3 className="text-3xl font-[1000] text-white mb-2 italic uppercase tracking-tighter">Start Free Trial</h3>
-        <p className="text-slate-500 font-medium text-sm italic uppercase tracking-widest">No credit card needed</p>
+    <div id={id} className="bg-white p-10 rounded-2xl shadow-2xl border border-slate-100 relative">
+      <div className="mb-8">
+        <h3 className="text-2xl font-black uppercase mb-1">Apply for Early Access</h3>
+        <p className="text-slate-500 text-xs font-bold uppercase tracking-widest italic">Limited to 5,000 Agents Only</p>
       </div>
       
-      <form onSubmit={handleSubmit} className="space-y-6 relative z-10">
-        <div className="space-y-2">
-          <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] ml-1">Your Full Name</label>
+      <form onSubmit={handleSubmit} className="space-y-5">
+        <div className="space-y-1">
+          <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Full Name</label>
           <input 
             type="text" 
             name="name"
             required
             value={formData.name}
             onChange={handleChange}
-            placeholder="NAME"
-            className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/5 text-white placeholder:text-slate-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all font-bold uppercase italic"
+            placeholder="Your Name"
+            className="w-full px-5 py-4 rounded-lg bg-slate-50 border border-slate-200 focus:border-indigo-600 focus:bg-white focus:outline-none transition-all font-bold"
           />
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="space-y-2">
-            <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] ml-1">Mobile (WhatsApp)</label>
-            <input 
-              type="tel" 
-              name="mobile"
-              required
-              pattern="[0-9]{10}"
-              value={formData.mobile}
-              onChange={handleChange}
-              placeholder="98765 43210"
-              className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/5 text-white focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all font-bold italic"
-            />
-          </div>
-          <div className="space-y-2">
-            <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] ml-1">Target Market</label>
+        <div className="space-y-1">
+          <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">WhatsApp Number</label>
+          <input 
+            type="tel" 
+            name="mobile"
+            required
+            pattern="[0-9]{10}"
+            value={formData.mobile}
+            onChange={handleChange}
+            placeholder="10-Digit Mobile"
+            className="w-full px-5 py-4 rounded-lg bg-slate-50 border border-slate-200 focus:border-indigo-600 focus:bg-white focus:outline-none transition-all font-bold"
+          />
+        </div>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div className="space-y-1">
+            <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Location</label>
             <select 
               name="city"
               value={formData.city}
               onChange={handleChange}
-              className="w-full px-6 py-4 rounded-2xl bg-[#0a0f2b] border border-white/5 text-white focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all font-bold cursor-pointer italic uppercase"
+              className="w-full px-4 py-4 rounded-lg bg-slate-50 border border-slate-200 font-bold cursor-pointer"
             >
               <option value="Delhi">DELHI / NCR</option>
               <option value="Mumbai">MUMBAI</option>
               <option value="Bangalore">BANGALORE</option>
               <option value="Pune">PUNE</option>
-              <option value="Hyderabad">HYDERABAD</option>
-              <option value="Chennai">CHENNAI</option>
             </select>
           </div>
-        </div>
-        
-        <div className="space-y-2">
-          <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] ml-1">Your Role</label>
-          <select 
+          <div className="space-y-1">
+            <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Current Role</label>
+            <select 
               name="profession"
               value={formData.profession}
               onChange={handleChange}
-              className="w-full px-6 py-4 rounded-2xl bg-white/5 border border-white/5 text-white focus:outline-none focus:ring-2 focus:ring-indigo-600 transition-all font-bold cursor-pointer italic uppercase"
+              className="w-full px-4 py-4 rounded-lg bg-slate-50 border border-slate-200 font-bold cursor-pointer"
             >
               <option value="Agent">SOLO AGENT</option>
-              <option value="Broker">REAL ESTATE BROKER</option>
-              <option value="Developer">PROPERTY DEVELOPER</option>
+              <option value="Broker">BROKER</option>
               <option value="Partner">CHANNEL PARTNER</option>
             </select>
+          </div>
         </div>
         
-        <div className="pt-6">
+        <div className="pt-4">
           <button 
             type="submit"
-            className="w-full py-5 bg-indigo-600 text-white rounded-2xl font-[1000] text-xl hover:bg-indigo-500 transition-all shadow-xl shadow-indigo-600/20 active:scale-95 uppercase italic tracking-tighter"
+            className="cta-button w-full py-5 rounded-lg font-black text-xl uppercase tracking-tighter"
           >
-            Deploy My App Now
+            I'M READY TO SCALE! 🚀
           </button>
-          <div className="flex items-center justify-center gap-2 mt-6 text-[10px] font-black text-slate-600 uppercase tracking-widest italic">
-             <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse"></span>
-             Get Your First Lead Today
-          </div>
+          <p className="mt-4 text-[10px] text-center text-slate-400 font-bold uppercase">🔐 Your data is safe with us. No Spam ever.</p>
         </div>
       </form>
     </div>

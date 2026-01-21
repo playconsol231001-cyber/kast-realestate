@@ -1,116 +1,137 @@
 
-import React from 'react';
 import { Benefit, Testimonial, EligibilityCriterion } from './types';
 
 export const BRAND_NAME = "Kast";
 
+// Fix: Added missing BENEFITS constant exported to Benefits.tsx
 export const BENEFITS: Benefit[] = [
   {
     id: 1,
-    title: "Omni-Channel Lead Capture",
-    description: "Instantly aggregate leads from Instagram Ads, Facebook Marketplace, and QR codes on your physical site boards into one clean view.",
-    icon: "🎯"
+    title: "Instant Verification",
+    description: "Move from lead to verified buyer in under 60 seconds with AI profiling.",
+    icon: "⚡"
   },
   {
     id: 2,
-    title: "Professional Brand Page",
-    description: "Launch a high-converting digital storefront in 3 minutes. Showcase your active listings, sold properties, and verified client reviews.",
-    icon: "🏠"
-  },
-  {
-    id: 3,
-    title: "AI Response Engine",
-    description: "Kast's intelligent concierge answers basic property queries on WhatsApp 24/7, qualifying buyers before you even pick up the phone.",
+    title: "24/7 AI Receptionist",
+    description: "Never miss a late-night inquiry. Our AI schedules site visits while you sleep.",
     icon: "🤖"
   },
   {
-    id: 4,
-    title: "Real-Time ROI Analytics",
-    description: "See exactly which property listings are getting 'hot' and which marketing channels are delivering high-intent buyers in real-time.",
-    icon: "📊"
-  },
-  {
-    id: 5,
-    title: "Digital Brochures",
-    description: "Generate stunning PDF brochures with your branding. Track 'Open Rates' and see exactly which sections your clients are reading.",
-    icon: "📄"
-  },
-  {
-    id: 6,
-    title: "Smart Follow-ups",
-    description: "Never let a lead go cold. Kast automatically schedules reminders and follow-up pings based on the buyer's level of interest.",
-    icon: "⏰"
+    id: 3,
+    title: "Official Green Tick",
+    description: "Get the prestigious verified badge on your WhatsApp Business profile.",
+    icon: "✅"
   }
 ];
 
+// Fix: Added missing ELIGIBILITY constant exported to Eligibility.tsx
+export const ELIGIBILITY: EligibilityCriterion[] = [
+  { id: 1, label: "Experience", value: "Min. 1 Year" },
+  { id: 2, label: "RERA Status", value: "Required / Applied" },
+  { id: 3, label: "Monthly Leads", value: "50+ (Recommended)" },
+  { id: 4, label: "Location", value: "Tier 1/2 Cities" }
+];
+
+// Fix: Added missing STATS constant exported to Stats.tsx
+export const STATS = [
+  { label: "Verified Agents", value: "2.4K+" },
+  { label: "Avg. ROI Increase", value: "40%" },
+  { label: "Leads Processed", value: "1M+" },
+  { label: "Site Visits Booked", value: "85K" }
+];
+
+// Fix: Added missing PRICING_PLANS constant exported to Pricing.tsx
 export const PRICING_PLANS = [
   {
-    name: "Starter",
-    price: "₹0",
-    period: "Forever",
-    features: ["1 Digital Profile", "50 Lead Captures/mo", "Basic Analytics", "WhatsApp Integration"],
-    cta: "Start Free",
-    popular: false
-  },
-  {
-    name: "Professional",
-    price: "₹1,499",
-    period: "per month",
-    features: ["Unlimited Listings", "AI Response Bot", "Advanced ROI Tracking", "Priority Support"],
-    cta: "Get Pro",
+    name: "Growth Starter",
+    price: "₹999",
+    period: "/month",
+    features: [
+      "Official WhatsApp API",
+      "Kast Growth OS",
+      "AI Response Bot (Basic)",
+      "Managed Ad Templates",
+      "Community Access"
+    ],
+    cta: "Start Scaling Now",
     popular: true
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    period: "For Teams",
-    features: ["White-label Domain", "API Access", "Multi-Agent Dashboard", "Dedicated Manager"],
-    cta: "Contact Sales",
+    name: "Elite Broker",
+    price: "₹2,499",
+    period: "/month",
+    features: [
+      "Everything in Starter",
+      "Advanced AI Qualification",
+      "Team Tracking Dashboard",
+      "Priority Verification",
+      "1-on-1 Strategy Call"
+    ],
+    cta: "Join the Elite",
     popular: false
   }
 ];
 
-export const TARGET_AUDIENCE = [
-  "Independent Agents",
-  "RERA Registered Brokers",
-  "Luxury Property Consultants",
-  "Developer Sales Teams"
+export const OFFER_INCLUDES = [
+  {
+    title: "Kast Growth OS",
+    value: "₹10,000",
+    description: "The complete operating system to manage property leads."
+  },
+  {
+    title: "Official WhatsApp Business API",
+    value: "₹5,000",
+    description: "Verified business profile with green tick eligibility."
+  },
+  {
+    title: "AI Response Bot (24/7)",
+    value: "₹7,500",
+    description: "Automated site visit scheduling and lead qualification."
+  },
+  {
+    title: "Managed Ad Templates",
+    value: "₹3,500",
+    description: "Winning Facebook/Insta ad creative library for real estate."
+  },
+  {
+    title: "Growth Community Access",
+    value: "₹2,500",
+    description: "Weekly calls with top 1% agents in India."
+  }
+];
+
+export const WHO_IS_IT_FOR = [
+  {
+    title: "Solo Agents",
+    desc: "Tired of manual follow-ups and losing leads to competitors.",
+    icon: "👤"
+  },
+  {
+    title: "Brokerage Owners",
+    desc: "Who want to track their team's performance and conversion.",
+    icon: "🏢"
+  },
+  {
+    title: "Channel Partners",
+    desc: "Scaling luxury projects and needing verified high-intent leads.",
+    icon: "🤝"
+  }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: "Arjun Sharma",
-    role: "Premium Broker, South Delhi",
-    content: "In the high-stakes Delhi market, response time is everything. Kast's AI bot handles my 2 AM enquiries while I sleep. Absolute game changer.",
-    avatar: "https://i.pravatar.cc/150?u=arjun"
+    name: "Ankit Sharma",
+    role: "Gurgaon Specialist",
+    content: "Within 2 weeks of using Kast, my site visit conversion went up by 40%. The automated WhatsApp reply is a game changer.",
+    avatar: "https://i.pravatar.cc/150?u=ankit"
   },
   {
     id: 2,
-    name: "Priya Nair",
-    role: "Agency Lead, Bangalore",
-    content: "The digital brand page gives my team instant credibility. It looks more professional than portals that charge us lakhs per month.",
-    avatar: "https://i.pravatar.cc/150?u=priya"
-  },
-  {
-    id: 3,
-    name: "Vikram Malhotra",
-    role: "Project Developer, Mumbai",
-    content: "We deployed Kast for our Worli project. The QR-to-Lead conversion was 3x higher than our traditional physical site visits alone.",
-    avatar: "https://i.pravatar.cc/150?u=vikram"
+    name: "Fareed Khan",
+    role: "West Delhi Broker",
+    content: "I finally separated my personal WhatsApp from work. Kast gives me professional credibility that my clients love.",
+    avatar: "https://i.pravatar.cc/150?u=fareed"
   }
-];
-
-export const STATS = [
-  { label: "Onboarded Pros", value: "25k+" },
-  { label: "Leads Captured", value: "2.5M+" },
-  { label: "Active Nodes", value: "500+" },
-  { label: "Success Rate", value: "98%" }
-];
-
-export const ELIGIBILITY: EligibilityCriterion[] = [
-  { id: 1, label: "Business Type", value: "Real Estate Service" },
-  { id: 2, label: "Market Presence", value: "Active in India" },
-  { id: 3, label: "Verification", value: "RERA/Professional KYC" },
-  { id: 4, label: "Digital Status", value: "Mobile Ready" }
 ];
