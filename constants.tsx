@@ -1,74 +1,89 @@
 
-import { Benefit, Testimonial, EligibilityCriterion } from './types';
+import { Benefit, Testimonial, EligibilityCriterion, PricingPlan } from './types';
 
 export const BRAND_NAME = "Kast";
 
-// Fix: Added missing BENEFITS constant exported to Benefits.tsx
 export const BENEFITS: Benefit[] = [
   {
     id: 1,
-    title: "Instant Verification",
-    description: "Move from lead to verified buyer in under 60 seconds with AI profiling.",
-    icon: "⚡"
+    title: "Instant Context",
+    description: "Know exactly which property they are asking about and where they came from before you reply.",
+    icon: "🎯"
   },
   {
     id: 2,
-    title: "24/7 AI Receptionist",
-    description: "Never miss a late-night inquiry. Our AI schedules site visits while you sleep.",
+    title: "24/7 AI Backup",
+    description: "When you're in a site visit, AI replies instantly so buyers don't move on to competitors.",
     icon: "🤖"
   },
   {
     id: 3,
-    title: "Official Green Tick",
-    description: "Get the prestigious verified badge on your WhatsApp Business profile.",
+    title: "Business Grade WhatsApp",
+    description: "Separate work from personal. Use official API for verified professional credibility.",
     icon: "✅"
   }
 ];
 
-// Fix: Added missing ELIGIBILITY constant exported to Eligibility.tsx
-export const ELIGIBILITY: EligibilityCriterion[] = [
-  { id: 1, label: "Experience", value: "Min. 1 Year" },
-  { id: 2, label: "RERA Status", value: "Required / Applied" },
-  { id: 3, label: "Monthly Leads", value: "50+ (Recommended)" },
-  { id: 4, label: "Location", value: "Tier 1/2 Cities" }
-];
-
-// Fix: Added missing STATS constant exported to Stats.tsx
-export const STATS = [
-  { label: "Verified Agents", value: "2.4K+" },
-  { label: "Avg. ROI Increase", value: "40%" },
-  { label: "Leads Processed", value: "1M+" },
-  { label: "Site Visits Booked", value: "85K" }
-];
-
-// Fix: Added missing PRICING_PLANS constant exported to Pricing.tsx
-export const PRICING_PLANS = [
+export const TESTIMONIALS: Testimonial[] = [
   {
-    name: "Growth Starter",
+    id: 1,
+    name: "Ankit S.",
+    role: "Gurgaon Specialist",
+    content: "Earlier I had to remember which buyer asked about which property. Now Kast shows me everything before I reply.",
+    avatar: "https://i.pravatar.cc/150?u=ankit"
+  },
+  {
+    id: 2,
+    name: "Fareed",
+    role: "West Delhi Broker",
+    content: "I don’t miss enquiries anymore when I’m in site visits. That alone makes this useful.",
+    avatar: "https://i.pravatar.cc/150?u=fareed"
+  },
+  {
+    id: 3,
+    name: "Rina",
+    role: "Saket Agent",
+    content: "I shared a resale listing on WhatsApp and got site visits without chasing.",
+    avatar: "https://i.pravatar.cc/150?u=rina"
+  }
+];
+
+// Added ELIGIBILITY constant to fix error in components/Eligibility.tsx
+export const ELIGIBILITY: EligibilityCriterion[] = [
+  { id: 1, label: "PROFESSIONAL STATUS", value: "ACTIVE AGENT" },
+  { id: 2, label: "RERA STATUS", value: "REQUIRED" },
+  { id: 3, label: "IDENTITY", value: "VERIFIED" },
+  { id: 4, label: "COMMITMENT", value: "DEDICATED" }
+];
+
+// Added PRICING_PLANS constant to fix error in components/Pricing.tsx
+export const PRICING_PLANS: PricingPlan[] = [
+  {
+    name: "Early Access",
     price: "₹999",
-    period: "/month",
+    period: "One-Time",
     features: [
-      "Official WhatsApp API",
       "Kast Growth OS",
-      "AI Response Bot (Basic)",
+      "WhatsApp Business API",
+      "AI Response Bot",
       "Managed Ad Templates",
       "Community Access"
     ],
-    cta: "Start Scaling Now",
+    cta: "Join Now",
     popular: true
   },
   {
-    name: "Elite Broker",
-    price: "₹2,499",
-    period: "/month",
+    name: "Standard",
+    price: "₹4,999",
+    period: "/ MONTH",
     features: [
-      "Everything in Starter",
-      "Advanced AI Qualification",
-      "Team Tracking Dashboard",
+      "Everything in Early Access",
       "Priority Verification",
-      "1-on-1 Strategy Call"
+      "Multi-Agent Support",
+      "Custom AI Training",
+      "Advanced Analytics"
     ],
-    cta: "Join the Elite",
+    cta: "Contact Sales",
     popular: false
   }
 ];
@@ -119,19 +134,9 @@ export const WHO_IS_IT_FOR = [
   }
 ];
 
-export const TESTIMONIALS: Testimonial[] = [
-  {
-    id: 1,
-    name: "Ankit Sharma",
-    role: "Gurgaon Specialist",
-    content: "Within 2 weeks of using Kast, my site visit conversion went up by 40%. The automated WhatsApp reply is a game changer.",
-    avatar: "https://i.pravatar.cc/150?u=ankit"
-  },
-  {
-    id: 2,
-    name: "Fareed Khan",
-    role: "West Delhi Broker",
-    content: "I finally separated my personal WhatsApp from work. Kast gives me professional credibility that my clients love.",
-    avatar: "https://i.pravatar.cc/150?u=fareed"
-  }
+export const STATS = [
+  { label: "Verified Agents", value: "2.4K+" },
+  { label: "Avg. ROI Increase", value: "40%" },
+  { label: "Leads Processed", value: "1M+" },
+  { label: "Site Visits Booked", value: "85K" }
 ];

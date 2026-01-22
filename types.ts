@@ -26,3 +26,13 @@ export interface FormData {
   city: string;
   profession: string;
 }
+
+// Added PricingPlan interface to satisfy components/Pricing.tsx requirements
+export interface PricingPlan {
+  name: string;
+  price: string;
+  period: string;
+  features: string[];
+  cta: string;
+  popular: boolean;
+}
