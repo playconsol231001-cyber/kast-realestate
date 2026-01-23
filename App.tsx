@@ -12,7 +12,7 @@ const App: React.FC = () => {
   const [fomoNotice, setFomoNotice] = useState<{name: string, action: string} | null>(null);
 
   const names = ["Ankit from Gurgaon", "Fareed from West Delhi", "Rina from Saket", "Amit from Pune", "Sneha from Mumbai"];
-  const actions = ["just joined the community", "secured early access pricing", "activated their AI assistant", "joined the WhatsApp group"];
+  const actions = ["just started their free trial", "activated their AI assistant", "joined the WhatsApp group", "onboarded their team"];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +63,7 @@ const App: React.FC = () => {
         {/* STICKY CTA MOBILE */}
         <div className={`fixed bottom-0 left-0 w-full p-4 bg-white border-t border-slate-200 z-[90] transition-transform duration-300 md:hidden ${showStickyCta ? 'translate-y-0' : 'translate-y-full'}`}>
            <button onClick={scrollToForm} className="cta-button w-full py-4 rounded-lg font-black text-lg uppercase shadow-xl">
-             Get Early Access 🚀
+             Start 7-Day Free Trial 🚀
            </button>
         </div>
 
@@ -72,31 +72,53 @@ const App: React.FC = () => {
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-4xl md:text-5xl font-black mb-12 font-heading uppercase italic text-center leading-none">
               The real problem isn’t leads.<br/>
-              <span className="text-indigo-600 underline">It’s knowing which ones actually matter.</span>
+              <span className="text-indigo-600 underline">It’s identifying the true closers.</span>
             </h2>
             
             <div className="mb-16">
-              <p className="font-black text-slate-400 uppercase tracking-widest text-sm mb-6 text-center">Your day already looks like this:</p>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="p-8 bg-red-50 rounded-3xl border border-red-100 text-center">
-                  <span className="text-4xl mb-4 block">📞</span>
-                  <p className="font-bold text-slate-800">Making calls nonstop</p>
+              <p className="font-black text-slate-400 uppercase tracking-widest text-sm mb-10 text-center">Your day already looks like this:</p>
+              <div className="grid md:grid-cols-3 gap-8">
+                {/* Modernized Card 1 */}
+                <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
+                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform">
+                    <svg className="w-10 h-10 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 7l2 2m0 0l2-2m-2 2v-6" className="text-rose-500 opacity-40" />
+                    </svg>
+                  </div>
+                  <p className="font-black text-slate-800 uppercase text-sm tracking-tight leading-tight">Making calls nonstop</p>
                 </div>
-                <div className="p-8 bg-red-50 rounded-3xl border border-red-100 text-center">
-                  <span className="text-4xl mb-4 block">💬</span>
-                  <p className="font-bold text-slate-800">WhatsApp messages piling up</p>
+
+                {/* Modernized Card 2 */}
+                <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
+                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform">
+                    <svg className="w-10 h-10 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v4m0 4v.01" className="text-emerald-500 opacity-40" />
+                    </svg>
+                  </div>
+                  <p className="font-black text-slate-800 uppercase text-sm tracking-tight leading-tight">WhatsApp messages piling up</p>
                 </div>
-                <div className="p-8 bg-red-50 rounded-3xl border border-red-100 text-center">
-                  <span className="text-4xl mb-4 block">📩</span>
-                  <p className="font-bold text-slate-800">Enquiries from portals, ads, referrals, listings</p>
+
+                {/* Modernized Card 3 */}
+                <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
+                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform">
+                    <svg className="w-10 h-10 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v4m0 0l-2-2m2 2l2-2" className="text-indigo-600" />
+                    </svg>
+                  </div>
+                  <p className="font-black text-slate-800 uppercase text-sm tracking-tight leading-tight">Enquiries from portals, ads, referrals, listings</p>
                 </div>
               </div>
             </div>
 
-            <div className="space-y-8 text-xl font-medium text-slate-600 border-l-8 border-indigo-600 pl-10 py-6 bg-slate-50 rounded-r-3xl">
-              <p>At first, every buyer sounds the same. Some are ready to buy. Some are just <span className="text-red-600 font-black underline italic">“rate pooch rahe hain”</span>.</p>
-              <p><span className="text-slate-900 font-black italic">Buyers don’t wait.</span> Today’s buyers expect fast, clear replies on WhatsApp. If they don’t get them, they move on.</p>
-              <p className="text-indigo-600 font-black text-2xl uppercase italic leading-tight">Kast makes sure every serious enquiry is handled — even when you’re busy.</p>
+            <div className="space-y-8 text-xl font-medium text-slate-600 border-l-8 border-indigo-600 pl-10 py-10 bg-indigo-50/50 rounded-r-3xl">
+              <p>Initially, every digital inquiry looks identical. Some are <span className="text-indigo-600 font-black italic">qualified, transaction-ready investors</span>, while others are merely <span className="text-slate-900 font-black italic">low-intent information seekers</span>.</p>
+              
+              <p>In high-stakes real estate, <span className="text-slate-900 font-black italic underline decoration-indigo-300">Responsiveness is the ultimate competitive advantage.</span> Modern buyers demand instantaneous, professional engagement. If your response isn't immediate, your prospect has already moved to your competitor's listing.</p>
+              
+              <p className="text-indigo-600 font-black text-2xl uppercase italic leading-tight pt-4">Kast ensures your personal brand stays responsive 24/7, capturing the gold while filtering the noise.</p>
             </div>
           </div>
         </section>
@@ -272,16 +294,16 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* PRICING SECTION */}
+        {/* PRICING/TRIAL SECTION */}
         <section id="pricing" className="py-24 bg-slate-900 text-white relative">
            <div className="max-w-4xl mx-auto px-4 relative z-10">
               <div className="text-center mb-16">
-                 <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic font-heading tracking-tighter">India Launch Early Access</h2>
-                 <p className="text-indigo-400 font-black uppercase tracking-[0.3em] text-xs">Lock in your Early Agent pricing now</p>
+                 <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic font-heading tracking-tighter">Experience the Full OS</h2>
+                 <p className="text-indigo-400 font-black uppercase tracking-[0.3em] text-xs">Start your 7-Day Free Trial Today</p>
               </div>
               
               <div className="bg-white text-slate-900 border-4 border-indigo-600 rounded-[4rem] p-10 md:p-16 shadow-[0_0_100px_rgba(79,70,229,0.3)] relative overflow-hidden">
-                 <div className="absolute top-0 right-0 p-12 -mr-12 -mt-12 bg-indigo-600 text-white rounded-full font-black text-xl flex items-center justify-center rotate-12 z-20">₹₹₹ SAVINGS</div>
+                 <div className="absolute top-0 right-0 p-12 -mr-12 -mt-12 bg-indigo-600 text-white rounded-full font-black text-xl flex items-center justify-center rotate-12 z-20 uppercase tracking-tighter">ZERO COST</div>
                  
                  <div className="space-y-8 mb-16">
                     {OFFER_INCLUDES.map((item, i) => (
@@ -293,18 +315,26 @@ const App: React.FC = () => {
                                <p className="text-slate-500 text-sm font-medium italic">{item.description}</p>
                             </div>
                          </div>
-                         <div className="text-indigo-600 font-black text-lg line-through opacity-20">{item.value}</div>
+                         <div className="text-indigo-600 font-black text-sm uppercase italic tracking-widest">{item.value}</div>
                       </div>
                     ))}
                  </div>
                  
                  <div className="bg-slate-50 p-12 rounded-[2.5rem] border-4 border-dashed border-indigo-200 text-center relative">
-                    <p className="text-slate-500 font-black uppercase text-[10px] tracking-[0.4em] mb-4">SPECIAL INDIA-ONLY PRICE:</p>
-                    <p className="text-6xl md:text-8xl font-black text-slate-900 mb-8 font-heading tracking-tighter italic">₹999<span className="text-xl not-italic opacity-30">/-</span></p>
+                    <p className="text-slate-500 font-black uppercase text-[10px] tracking-[0.4em] mb-4">LIMITED TIME TRIAL OFFER:</p>
+                    <div className="flex items-center justify-center gap-4 mb-8">
+                      <p className="text-6xl md:text-9xl font-black text-slate-900 font-heading tracking-tighter italic animate-pulse-subtle">FREE</p>
+                      <div className="flex flex-col items-start text-left">
+                        <div className="bg-emerald-500 text-white text-[12px] md:text-[14px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest animate-float-badge shadow-xl shadow-emerald-500/20">
+                          / 7 Days Trial
+                        </div>
+                        <span className="text-slate-400 font-black uppercase text-[10px] tracking-widest mt-2 ml-1">UNLIMITED ACCESS</span>
+                      </div>
+                    </div>
                     <button onClick={scrollToForm} className="cta-button w-full max-w-md py-7 rounded-2xl font-black text-2xl uppercase tracking-tighter shadow-[0_10px_0_#c4ab00]">
-                      SECURE MY EARLY ACCESS
+                      CLAIM MY FREE TRIAL 🚀
                     </button>
-                    <p className="mt-8 text-[11px] text-slate-400 font-black uppercase tracking-[0.2em]">Free to join Community • No spam • Leave anytime</p>
+                    <p className="mt-8 text-[11px] text-slate-400 font-black uppercase tracking-[0.2em]">No credit card required • Verified Agents Only • Instant Setup</p>
                  </div>
               </div>
            </div>
@@ -317,16 +347,16 @@ const App: React.FC = () => {
                  <h2 className="text-5xl md:text-6xl font-black mb-8 leading-[1] font-heading uppercase italic tracking-tighter">
                    Kast is currently onboarding <br/><span className="text-indigo-600 underline">limited agents.</span>
                  </h2>
-                 <p className="text-xl text-slate-500 mb-12 font-medium italic">Join the Kast Agent Community on WhatsApp to lock in your special pricing and priority leads.</p>
+                 <p className="text-xl text-slate-500 mb-12 font-medium italic">Apply for your 7-day free trial. Our team will verify your RERA status and activate your Growth OS within 12 hours.</p>
                  <div className="space-y-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border-l-8 border-indigo-600">
-                      <p className="font-black text-slate-900 uppercase">Early access before public launch</p>
+                      <p className="font-black text-slate-900 uppercase">Risk-free trial (Full Features)</p>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border-l-8 border-indigo-600">
-                      <p className="font-black text-slate-900 uppercase">Special India-only deals</p>
+                      <p className="font-black text-slate-900 uppercase">No automatic charges after 7 days</p>
                     </div>
                     <div className="p-6 bg-slate-50 rounded-2xl border-l-8 border-indigo-600">
-                      <p className="font-black text-slate-900 uppercase">Agent-only tools and updates</p>
+                      <p className="font-black text-slate-900 uppercase">Expert support during onboarding</p>
                     </div>
                  </div>
               </div>

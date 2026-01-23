@@ -48,7 +48,6 @@ export const TESTIMONIALS: Testimonial[] = [
   }
 ];
 
-// Added ELIGIBILITY constant to fix error in components/Eligibility.tsx
 export const ELIGIBILITY: EligibilityCriterion[] = [
   { id: 1, label: "PROFESSIONAL STATUS", value: "ACTIVE AGENT" },
   { id: 2, label: "RERA STATUS", value: "REQUIRED" },
@@ -56,28 +55,27 @@ export const ELIGIBILITY: EligibilityCriterion[] = [
   { id: 4, label: "COMMITMENT", value: "DEDICATED" }
 ];
 
-// Added PRICING_PLANS constant to fix error in components/Pricing.tsx
 export const PRICING_PLANS: PricingPlan[] = [
   {
-    name: "Early Access",
-    price: "₹999",
-    period: "One-Time",
+    name: "Growth OS Trial",
+    price: "FREE",
+    period: "FOR 7 DAYS",
     features: [
-      "Kast Growth OS",
-      "WhatsApp Business API",
-      "AI Response Bot",
+      "Full Kast Growth OS Access",
+      "WhatsApp Business API Setup",
+      "AI Response Bot (Active)",
       "Managed Ad Templates",
       "Community Access"
     ],
-    cta: "Join Now",
+    cta: "Start Free Trial",
     popular: true
   },
   {
-    name: "Standard",
-    price: "₹4,999",
-    period: "/ MONTH",
+    name: "Business",
+    price: "Custom",
+    period: "/ AGENT",
     features: [
-      "Everything in Early Access",
+      "Everything in Free Trial",
       "Priority Verification",
       "Multi-Agent Support",
       "Custom AI Training",
@@ -91,27 +89,27 @@ export const PRICING_PLANS: PricingPlan[] = [
 export const OFFER_INCLUDES = [
   {
     title: "Kast Growth OS",
-    value: "₹10,000",
+    value: "INCLUDED",
     description: "The complete operating system to manage property leads."
   },
   {
     title: "Official WhatsApp Business API",
-    value: "₹5,000",
+    value: "INCLUDED",
     description: "Verified business profile with green tick eligibility."
   },
   {
     title: "AI Response Bot (24/7)",
-    value: "₹7,500",
+    value: "INCLUDED",
     description: "Automated site visit scheduling and lead qualification."
   },
   {
     title: "Managed Ad Templates",
-    value: "₹3,500",
+    value: "INCLUDED",
     description: "Winning Facebook/Insta ad creative library for real estate."
   },
   {
     title: "Growth Community Access",
-    value: "₹2,500",
+    value: "INCLUDED",
     description: "Weekly calls with top 1% agents in India."
   }
 ];

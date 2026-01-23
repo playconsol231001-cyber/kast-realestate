@@ -24,13 +24,23 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
 
   if (submitted) {
     return (
-      <div className="bg-white p-12 rounded-2xl text-center shadow-2xl border-2 border-emerald-500">
-        <div className="w-20 h-20 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-6">
-          <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" /></svg>
+      <div className="bg-white p-12 md:p-20 rounded-[3rem] text-center shadow-[0_30px_100px_rgba(0,0,0,0.1)] border-t-8 border-emerald-500 animate-success-pop">
+        <div className="w-24 h-24 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-10 shadow-lg shadow-emerald-200">
+          <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="3">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+          </svg>
         </div>
-        <h3 className="text-2xl font-black mb-4 uppercase">Application Received!</h3>
-        <p className="text-slate-600 font-medium mb-8">Check your WhatsApp. We've sent you the next steps to complete your onboarding.</p>
-        <button className="text-indigo-600 font-black uppercase text-xs tracking-widest">Resend WhatsApp Invite</button>
+        <h3 className="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter italic text-slate-900 leading-tight">Interest Recorded!</h3>
+        <p className="text-slate-600 font-bold text-lg mb-12 italic leading-relaxed max-w-sm mx-auto">
+          We have recorded your interest. Our verification team will connect with you on WhatsApp shortly to activate your 7-Day FREE Trial.
+        </p>
+        <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald-50 rounded-full border border-emerald-100">
+          <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+          <span className="text-[10px] font-black text-emerald-700 uppercase tracking-widest">Awaiting Verification</span>
+        </div>
+        <div className="mt-12 pt-8 border-t border-slate-100">
+          <button onClick={() => setSubmitted(false)} className="text-indigo-600 font-black uppercase text-xs tracking-widest hover:underline">Apply for another account</button>
+        </div>
       </div>
     );
   }
@@ -38,8 +48,8 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
   return (
     <div id={id} className="bg-white p-10 rounded-2xl shadow-2xl border border-slate-100 relative">
       <div className="mb-8">
-        <h3 className="text-2xl font-black uppercase mb-1">Apply for Early Access</h3>
-        <p className="text-slate-500 text-xs font-bold uppercase tracking-widest italic">Limited to 5,000 Agents Only</p>
+        <h3 className="text-2xl font-black uppercase mb-1">Apply for 7-Day Free Trial</h3>
+        <p className="text-slate-500 text-xs font-bold uppercase tracking-widest italic">No Credit Card • Verified Agents Only</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-5">
@@ -105,9 +115,9 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
             type="submit"
             className="cta-button w-full py-5 rounded-lg font-black text-xl uppercase tracking-tighter"
           >
-            I'M READY TO SCALE! 🚀
+            START MY FREE TRIAL! 🚀
           </button>
-          <p className="mt-4 text-[10px] text-center text-slate-400 font-bold uppercase">🔐 Your data is safe with us. No Spam ever.</p>
+          <p className="mt-4 text-[10px] text-center text-slate-400 font-bold uppercase">🔐 No credit card required. Instant Setup.</p>
         </div>
       </form>
     </div>

@@ -53,6 +53,68 @@
         .value-card:hover {
             transform: translateY(-5px);
         }
+
+        /* Smooth WhatsApp Animation */
+        @keyframes whatsapp-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+        
+        @keyframes whatsapp-vibrate {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+            75% { transform: rotate(-3deg); }
+            100% { transform: rotate(0deg); }
+        }
+
+        .animate-whatsapp {
+            animation: whatsapp-pulse 2s ease-in-out infinite;
+        }
+        
+        .animate-whatsapp:hover {
+            animation: whatsapp-vibrate 0.3s ease-in-out infinite;
+        }
+
+        /* Banner Marquee Animation - Reverted to Classic Right-to-Left */
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .banner-marquee {
+            display: inline-block;
+            white-space: nowrap;
+            /* Slowed down from 20s to 50s for better readability */
+            animation: marquee 50s linear infinite;
+        }
+
+        /* New Professional Animations */
+        @keyframes pulse-subtle {
+          0%, 100% { transform: scale(1); opacity: 1; }
+          50% { transform: scale(1.02); opacity: 0.95; }
+        }
+        .animate-pulse-subtle {
+          animation: pulse-subtle 3s ease-in-out infinite;
+        }
+
+        @keyframes float-badge {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-10px); }
+        }
+        .animate-float-badge {
+          animation: float-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes success-pop {
+          0% { transform: scale(0.8); opacity: 0; }
+          70% { transform: scale(1.1); opacity: 1; }
+          100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-success-pop {
+          animation: success-pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
     </style>
 <script type="importmap">
 {

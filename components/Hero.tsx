@@ -15,9 +15,13 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           </span>
         </div>
         
-        <h1 className="font-heading text-4xl md:text-7xl font-[1000] text-slate-900 leading-[1.1] mb-8 uppercase italic tracking-tighter">
+        <h1 className="font-heading text-4xl md:text-7xl font-[1000] text-slate-900 leading-[1.1] mb-6 uppercase italic tracking-tighter">
           Capture <span className="text-indigo-600 underline">serious property leads</span> and turn them into deals on WhatsApp automatically.
         </h1>
+
+        <p className="text-lg md:text-2xl text-indigo-600 font-black max-w-4xl mx-auto mb-12 uppercase tracking-tight italic leading-tight">
+          India's #1 Real Estate Growth OS — Trusted by 2,400+ Verified Agents to Automate Listings, Leads, and Sales on WhatsApp.
+        </p>
         
         <div className="relative max-w-4xl mx-auto mb-12 video-shadow rounded-[2rem] overflow-hidden bg-black aspect-video group cursor-pointer border-4 border-slate-900 shadow-2xl">
            <img 
@@ -42,14 +46,14 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
             onClick={onCtaClick}
             className="cta-button w-full max-w-md py-7 rounded-2xl font-black text-2xl uppercase tracking-tighter hover:scale-[1.02] transition-all shadow-[0_8px_0_#c4ab00]"
           >
-            👉 Get Early Access to Kast
+            🚀 START YOUR 7-DAY FREE TRIAL
           </button>
           <div className="flex gap-4 text-[10px] font-black uppercase text-slate-400 tracking-widest">
-            <span>Limited early access</span>
+            <span>No credit card required</span>
             <span className="text-slate-300">•</span>
-            <span>Special pricing</span>
+            <span>Instant Activation</span>
             <span className="text-slate-300">•</span>
-            <span>Priority leads</span>
+            <span>Verified Agents Only</span>
           </div>
         </div>
       </div>
