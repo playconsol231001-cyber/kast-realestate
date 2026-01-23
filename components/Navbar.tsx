@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { BRAND_NAME } from '../../constants';
+import { BRAND_NAME } from '../constants';
 
 const Navbar: React.FC = () => {
   const whatsappUrl = "https://wa.me/918920526586?text=Hi%20Kast,%20I'm%20interested%20in%20starting%20my%207-day%20free%20trial.";

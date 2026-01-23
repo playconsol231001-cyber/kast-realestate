@@ -298,12 +298,12 @@ const App: React.FC = () => {
         <section id="pricing" className="py-24 bg-slate-900 text-white relative">
            <div className="max-w-4xl mx-auto px-4 relative z-10">
               <div className="text-center mb-16">
-                 <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic font-heading tracking-tighter">Experience the Full OS</h2>
+                 <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic font-heading tracking-tighter text-white">Experience the Full OS</h2>
                  <p className="text-indigo-400 font-black uppercase tracking-[0.3em] text-xs">Start your 7-Day Free Trial Today</p>
               </div>
               
               <div className="bg-white text-slate-900 border-4 border-indigo-600 rounded-[4rem] p-10 md:p-16 shadow-[0_0_100px_rgba(79,70,229,0.3)] relative overflow-hidden">
-                 <div className="absolute top-0 right-0 p-12 -mr-12 -mt-12 bg-indigo-600 text-white rounded-full font-black text-xl flex items-center justify-center rotate-12 z-20 uppercase tracking-tighter">ZERO COST</div>
+                 <div className="absolute top-0 right-0 p-12 -mr-12 -mt-12 bg-indigo-600 text-white rounded-full font-black text-xl flex items-center justify-center rotate-12 z-20 uppercase tracking-tighter shadow-xl">ZERO COST</div>
                  
                  <div className="space-y-8 mb-16">
                     {OFFER_INCLUDES.map((item, i) => (
@@ -321,17 +321,17 @@ const App: React.FC = () => {
                  </div>
                  
                  <div className="bg-slate-50 p-12 rounded-[2.5rem] border-4 border-dashed border-indigo-200 text-center relative">
-                    <p className="text-slate-500 font-black uppercase text-[10px] tracking-[0.4em] mb-4">LIMITED TIME TRIAL OFFER:</p>
-                    <div className="flex items-center justify-center gap-4 mb-8">
-                      <p className="text-6xl md:text-9xl font-black text-slate-900 font-heading tracking-tighter italic animate-pulse-subtle">FREE</p>
-                      <div className="flex flex-col items-start text-left">
-                        <div className="bg-emerald-500 text-white text-[12px] md:text-[14px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest animate-float-badge shadow-xl shadow-emerald-500/20">
+                    <p className="text-slate-500 font-black uppercase text-[10px] tracking-[0.4em] mb-6">LIMITED TIME TRIAL OFFER:</p>
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10">
+                      <p className="text-7xl md:text-9xl font-black text-slate-900 font-heading tracking-tighter italic animate-pulse-subtle">FREE</p>
+                      <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                        <div className="bg-emerald-500 text-white text-[16px] md:text-[18px] font-black px-6 py-2.5 rounded-full uppercase tracking-widest animate-float-badge shadow-2xl shadow-emerald-500/40 border-2 border-white">
                           / 7 Days Trial
                         </div>
-                        <span className="text-slate-400 font-black uppercase text-[10px] tracking-widest mt-2 ml-1">UNLIMITED ACCESS</span>
+                        <span className="text-indigo-600 font-black uppercase text-[12px] tracking-widest mt-3 ml-1 bg-indigo-50 px-3 py-1 rounded">UNLIMITED ACCESS</span>
                       </div>
                     </div>
-                    <button onClick={scrollToForm} className="cta-button w-full max-w-md py-7 rounded-2xl font-black text-2xl uppercase tracking-tighter shadow-[0_10px_0_#c4ab00]">
+                    <button onClick={scrollToForm} className="cta-button w-full max-w-md py-8 rounded-2xl font-black text-2xl uppercase tracking-tighter shadow-[0_12px_0_#c4ab00] hover:scale-[1.02] transition-transform">
                       CLAIM MY FREE TRIAL 🚀
                     </button>
                     <p className="mt-8 text-[11px] text-slate-400 font-black uppercase tracking-[0.2em]">No credit card required • Verified Agents Only • Instant Setup</p>
