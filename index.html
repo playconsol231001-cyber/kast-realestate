@@ -77,7 +77,7 @@
             animation: whatsapp-vibrate 0.3s ease-in-out infinite;
         }
 
-        /* Banner Marquee Animation - Reverted to Classic Right-to-Left */
+        /* Banner Marquee Animation */
         @keyframes marquee {
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
@@ -86,11 +86,10 @@
         .banner-marquee {
             display: inline-block;
             white-space: nowrap;
-            /* Slowed down from 20s to 50s for better readability */
             animation: marquee 50s linear infinite;
         }
 
-        /* New Professional Animations */
+        /* Professional Animations */
         @keyframes pulse-subtle {
           0%, 100% { transform: scale(1); opacity: 1; }
           50% { transform: scale(1.02); opacity: 0.95; }

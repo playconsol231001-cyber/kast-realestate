@@ -24,22 +24,31 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-4 md:gap-8">
             <div className="hidden lg:flex items-center space-x-8">
               <a href="#how-it-works" className="text-xs font-bold text-slate-600 hover:text-indigo-600 uppercase">The System</a>
-              <a href="#pricing" className="text-xs font-bold text-slate-600 hover:text-indigo-600 uppercase">Risk-Free Trial</a>
             </div>
             
-            <a 
-              href={whatsappUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center hover:opacity-90 transition-all active:scale-90 transform duration-200 animate-whatsapp"
-              aria-label="Contact us on WhatsApp"
-            >
-              <img 
-                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
-                alt="WhatsApp" 
-                className="h-10 md:h-12 w-auto drop-shadow-lg" 
-              />
-            </a>
+            <div className="flex items-center gap-2 md:gap-4">
+              <a 
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hidden sm:block text-[10px] font-black text-indigo-600 uppercase tracking-widest animate-pulse whitespace-nowrap hover:underline"
+              >
+                Join for free
+              </a>
+              <a 
+                href={whatsappUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center hover:opacity-90 transition-all active:scale-90 transform duration-200 animate-whatsapp"
+                aria-label="Contact us on WhatsApp"
+              >
+                <img 
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                  alt="WhatsApp" 
+                  className="h-10 md:h-12 w-auto drop-shadow-lg" 
+                />
+              </a>
+            </div>
           </div>
         </div>
       </nav>

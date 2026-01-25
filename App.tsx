@@ -41,7 +41,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden">
+    <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden font-sans">
       <Navbar />
       
       <main>
@@ -63,16 +63,16 @@ const App: React.FC = () => {
         {/* STICKY CTA MOBILE */}
         <div className={`fixed bottom-0 left-0 w-full p-4 bg-white border-t border-slate-200 z-[90] transition-transform duration-300 md:hidden ${showStickyCta ? 'translate-y-0' : 'translate-y-full'}`}>
            <button onClick={scrollToForm} className="cta-button w-full py-4 rounded-lg font-black text-lg uppercase shadow-xl">
-             Start 7-Day Free Trial 🚀
+             Start 7-Day Free Trial
            </button>
         </div>
 
         {/* THE REAL PROBLEM SECTION */}
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-black mb-12 font-heading uppercase italic text-center leading-none">
-              The real problem isn’t leads.<br/>
-              <span className="text-indigo-600 underline">It’s identifying the true closers.</span>
+            <h2 className="text-4xl md:text-5xl font-black mb-12 font-heading text-center leading-tight">
+              The real problem isn't leads. <br/>
+              <span className="text-indigo-600 underline">It's identifying the true closers.</span>
             </h2>
             
             <div className="mb-16">
@@ -86,7 +86,7 @@ const App: React.FC = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 7l2 2m0 0l2-2m-2 2v-6" className="text-rose-500 opacity-40" />
                     </svg>
                   </div>
-                  <p className="font-black text-slate-800 uppercase text-sm tracking-tight leading-tight">Making calls nonstop</p>
+                  <p className="font-bold text-slate-800 text-base leading-tight">Making calls nonstop</p>
                 </div>
 
                 {/* Modernized Card 2 */}
@@ -97,7 +97,7 @@ const App: React.FC = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v4m0 4v.01" className="text-emerald-500 opacity-40" />
                     </svg>
                   </div>
-                  <p className="font-black text-slate-800 uppercase text-sm tracking-tight leading-tight">WhatsApp messages piling up</p>
+                  <p className="font-bold text-slate-800 text-base leading-tight">WhatsApp messages piling up</p>
                 </div>
 
                 {/* Modernized Card 3 */}
@@ -108,17 +108,17 @@ const App: React.FC = () => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v4m0 0l-2-2m2 2l2-2" className="text-indigo-600" />
                     </svg>
                   </div>
-                  <p className="font-black text-slate-800 uppercase text-sm tracking-tight leading-tight">Enquiries from portals, ads, referrals, listings</p>
+                  <p className="font-bold text-slate-800 text-base leading-tight">Enquiries from portals and ads</p>
                 </div>
               </div>
             </div>
 
             <div className="space-y-8 text-xl font-medium text-slate-600 border-l-8 border-indigo-600 pl-10 py-10 bg-indigo-50/50 rounded-r-3xl">
-              <p>Initially, every digital inquiry looks identical. Some are <span className="text-indigo-600 font-black italic">qualified, transaction-ready investors</span>, while others are merely <span className="text-slate-900 font-black italic">low-intent information seekers</span>.</p>
+              <p>Initially, every digital inquiry looks identical. Some are <span className="text-indigo-600 font-bold">qualified, transaction-ready investors</span>, while others are merely <span className="text-slate-900 font-bold">low-intent information seekers</span>.</p>
               
-              <p>In high-stakes real estate, <span className="text-slate-900 font-black italic underline decoration-indigo-300">Responsiveness is the ultimate competitive advantage.</span> Modern buyers demand instantaneous, professional engagement. If your response isn't immediate, your prospect has already moved to your competitor's listing.</p>
+              <p>In high-stakes real estate, <span className="text-slate-900 font-bold underline decoration-indigo-300">responsiveness is the ultimate competitive advantage.</span> Modern buyers demand instantaneous, professional engagement. If your response isn't immediate, your prospect has already moved to your competitor's listing.</p>
               
-              <p className="text-indigo-600 font-black text-2xl uppercase italic leading-tight pt-4">Kast ensures your personal brand stays responsive 24/7, capturing the gold while filtering the noise.</p>
+              <p className="text-indigo-600 font-black text-2xl uppercase leading-tight pt-4">Kast ensures your personal brand stays responsive 24/7, capturing the gold while filtering the noise.</p>
             </div>
           </div>
         </section>
@@ -126,11 +126,11 @@ const App: React.FC = () => {
         {/* MOMENT THE LEAD COMES IN */}
         <section className="py-24 bg-slate-900 text-white">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl md:text-5xl font-black mb-8 uppercase italic leading-none font-heading">
+            <h2 className="text-3xl md:text-5xl font-black mb-8 leading-tight font-heading">
               Kast fixes this at the moment <br/><span className="text-indigo-400 underline">the lead comes in.</span>
             </h2>
             <p className="text-xl text-slate-400 mb-12 font-medium max-w-3xl">
-              When a buyer shows interest, fills a form, views a listing, or starts a chat (all done in a Kast powered smart portal), they are captured instantly.
+              When a buyer shows interest, fills a form, or views a listing on your smart portal, they are captured instantly.
             </p>
             
             <div className="grid md:grid-cols-3 gap-8">
@@ -151,15 +151,15 @@ const App: React.FC = () => {
         </section>
 
         {/* DEALS MOVE ON WHATSAPP */}
-        <section className="py-24 bg-white">
+        <section className="py-24 bg-white text-center">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl font-black mb-8 uppercase italic font-heading text-center">Deals move on WhatsApp</h2>
-            <div className="p-12 bg-red-600 text-white rounded-[4rem] text-center mb-12 shadow-2xl relative overflow-hidden">
+            <h2 className="text-4xl font-black mb-8 font-heading">Deals move on WhatsApp</h2>
+            <div className="p-12 bg-red-600 text-white rounded-[4rem] shadow-2xl relative overflow-hidden">
               <div className="absolute top-0 right-0 p-8 opacity-10">
                 <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.74.45 3.37 1.23 4.8L2 22l5.2-.82c1.43.78 3.06 1.23 4.8 1.23 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
               </div>
-              <h3 className="text-3xl font-black uppercase mb-6 italic">But personal WhatsApp isn’t built for this job</h3>
-              <p className="text-red-100 font-bold mb-10 text-lg">Not because agents don’t care. Because the system isn’t designed for professional follow-ups.</p>
+              <h3 className="text-2xl md:text-3xl font-black mb-6">But personal WhatsApp isn't built for business.</h3>
+              <p className="text-red-100 font-bold mb-10 text-lg">Personal systems aren't designed for high-volume professional follow-ups.</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="p-4 bg-white/10 rounded-2xl border border-white/20 text-xs font-black uppercase tracking-tighter">Chats get buried</div>
                 <div className="p-4 bg-white/10 rounded-2xl border border-white/20 text-xs font-black uppercase tracking-tighter">Depends on memory</div>
@@ -175,13 +175,13 @@ const App: React.FC = () => {
           <div className="max-w-5xl mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-20 items-center">
               <div>
-                <h2 className="text-4xl md:text-5xl font-black mb-8 uppercase italic leading-[1.1] font-heading">
-                  When you’re busy, <br/><span className="text-indigo-600 underline">AI handles</span> the conversation
+                <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight font-heading">
+                  When you're busy, <br/><span className="text-indigo-600 underline">AI handles</span> the conversation
                 </h2>
-                <div className="space-y-6 text-lg text-slate-600 font-medium italic">
-                  <p>When a buyer messages and you’re on a call, in a site visit, or just not free, Kast’s AI assistant steps in immediately.</p>
-                  <p>It replies on WhatsApp, answers basic questions, and shares relevant listings, just like you would.</p>
-                  <p className="text-indigo-600 font-black text-2xl uppercase not-italic">“Okay… this actually changes things.”</p>
+                <div className="space-y-6 text-lg text-slate-600 font-medium">
+                  <p>When a buyer messages and you're on a site visit, Kast's AI assistant steps in immediately.</p>
+                  <p>It replies on WhatsApp, answers questions, and shares listings just like you would.</p>
+                  <p className="text-indigo-600 font-black text-2xl uppercase">Picking up where you left off.</p>
                 </div>
               </div>
               <div className="p-10 bg-white border-2 border-slate-900 rounded-[3rem] shadow-2xl">
@@ -189,15 +189,15 @@ const App: React.FC = () => {
                 <div className="space-y-10">
                   <div className="flex gap-6">
                     <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black">01</div>
-                    <p className="font-bold text-slate-800">By the time you come back, you already know who the buyer is.</p>
+                    <p className="font-bold text-slate-800">By the time you're back, you already know who the buyer is.</p>
                   </div>
                   <div className="flex gap-6">
                     <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black">02</div>
-                    <p className="font-bold text-slate-800">You know what they’re looking for and what’s been discussed.</p>
+                    <p className="font-bold text-slate-800">You know what they want and what's been discussed.</p>
                   </div>
                   <div className="flex gap-6">
                     <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black">03</div>
-                    <p className="font-bold text-slate-800">You’re picking up the conversation at the right point.</p>
+                    <p className="font-bold text-slate-800">You pick up the conversation at the right point.</p>
                   </div>
                 </div>
               </div>
@@ -210,31 +210,31 @@ const App: React.FC = () => {
         {/* HOW KAST WORKS STEPS */}
         <section id="how-it-works" className="py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 text-center">
-            <h2 className="text-4xl font-black mb-16 uppercase italic font-heading">How Kast Works</h2>
+            <h2 className="text-4xl font-black mb-16 font-heading">How Kast Works</h2>
             <div className="grid md:grid-cols-3 gap-16 relative">
               <div className="absolute top-1/2 left-0 w-full h-1 bg-slate-100 -z-10 hidden md:block"></div>
               <div className="bg-white px-4">
                 <div className="w-20 h-20 bg-slate-900 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">1</div>
-                <p className="font-black text-lg text-slate-800 leading-tight uppercase">Buyer enquires on WhatsApp, form, or listing</p>
+                <p className="font-bold text-lg text-slate-800 leading-tight">Buyer enquires on WhatsApp or form</p>
               </div>
               <div className="bg-white px-4">
                 <div className="w-20 h-20 bg-slate-900 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">2</div>
-                <p className="font-black text-lg text-slate-800 leading-tight uppercase">Kast replies instantly and keeps it moving</p>
+                <p className="font-bold text-lg text-slate-800 leading-tight">Kast replies instantly and keeps it moving</p>
               </div>
               <div className="bg-white px-4">
                 <div className="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">3</div>
-                <p className="font-black text-lg text-slate-800 leading-tight uppercase">You step in with context and close the deals</p>
+                <p className="font-bold text-lg text-slate-800 leading-tight">You step in with context and close the deals</p>
               </div>
             </div>
-            <p className="mt-20 text-slate-400 font-black uppercase tracking-[0.3em] text-[10px] italic">No new workflow. No extra tools.</p>
+            <p className="mt-20 text-slate-400 font-black uppercase tracking-[0.3em] text-[10px]">No new workflow. No extra tools.</p>
           </div>
         </section>
 
         {/* LEAD GENERATION EXTRA */}
-        <section className="py-24 bg-indigo-600 text-white">
-          <div className="max-w-5xl mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-5xl font-black mb-8 uppercase italic font-heading leading-tight">Also available: <br/>Lead generation for Kast users</h2>
-            <p className="text-xl text-indigo-100 mb-12 max-w-2xl mx-auto font-medium italic">For agents who want more inbound enquiries, Kast also offers managed lead generation.</p>
+        <section className="py-24 bg-indigo-600 text-white text-center">
+          <div className="max-w-5xl mx-auto px-4">
+            <h2 className="text-3xl md:text-5xl font-black mb-8 font-heading leading-tight">Managed Lead Generation <br/>for Kast Users</h2>
+            <p className="text-xl text-indigo-100 mb-12 max-w-2xl mx-auto font-medium">For agents who want more inbound enquiries, Kast offers managed lead gen ads.</p>
             <div className="grid md:grid-cols-3 gap-8 text-left mb-12">
               <div className="p-8 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-md">
                 <p className="font-black text-indigo-300 mb-4 uppercase text-xs tracking-widest">Step 01</p>
@@ -246,10 +246,10 @@ const App: React.FC = () => {
               </div>
               <div className="p-8 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-md">
                 <p className="font-black text-indigo-300 mb-4 uppercase text-xs tracking-widest">Step 03</p>
-                <p className="font-bold text-lg">Leads are handled the same way — on WhatsApp</p>
+                <p className="font-bold text-lg">Leads are handled on WhatsApp</p>
               </div>
             </div>
-            <p className="text-indigo-200 font-black uppercase tracking-widest text-[10px] italic">Available only for active Kast users.</p>
+            <p className="text-indigo-200 font-black uppercase tracking-widest text-[10px]">Available only for active Kast users.</p>
           </div>
         </section>
 
@@ -258,19 +258,19 @@ const App: React.FC = () => {
           <div className="max-w-5xl mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-20 items-center">
               <div>
-                <h2 className="text-4xl font-black mb-8 uppercase italic leading-tight font-heading">One system instead of <span className="text-red-600">five tools</span></h2>
+                <h2 className="text-4xl font-black mb-8 font-heading leading-tight">One system instead of five tools</h2>
                 <p className="text-lg text-slate-600 font-medium leading-relaxed mb-8">
-                  Most agents juggle portals for leads, personal WhatsApp for chats, and notes for follow-ups. <span className="text-slate-900 font-black italic">"It works — but it’s messy."</span>
+                  Most agents juggle portals, personal WhatsApp, and manual notes. Kast brings everything together into one professional workspace.
                 </p>
                 <div className="p-8 bg-emerald-50 border-2 border-emerald-500 rounded-[2.5rem]">
                    <p className="font-black text-emerald-600 uppercase text-xs tracking-widest mb-4">The Kast OS:</p>
-                   <p className="font-bold text-slate-800 text-xl leading-tight italic">
-                    Kast brings everything together into one system built around WhatsApp. Less juggling. More control.
+                   <p className="font-bold text-slate-800 text-xl leading-tight">
+                    Less juggling. More control. Built specifically for Indian real estate professionals.
                    </p>
                 </div>
               </div>
               <div className="bg-slate-50 p-12 rounded-[3rem] border border-slate-200">
-                <h3 className="font-black text-slate-900 uppercase text-sm tracking-widest mb-8">Kast Business-Grade WhatsApp</h3>
+                <h3 className="font-black text-slate-900 uppercase text-sm tracking-widest mb-8">Professional Features</h3>
                 <ul className="space-y-6">
                   <li className="flex items-center gap-4">
                     <span className="w-8 h-8 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center font-black">✓</span>
@@ -298,8 +298,8 @@ const App: React.FC = () => {
         <section id="pricing" className="py-24 bg-slate-900 text-white relative">
            <div className="max-w-4xl mx-auto px-4 relative z-10">
               <div className="text-center mb-16">
-                 <h2 className="text-4xl md:text-6xl font-black mb-4 uppercase italic font-heading tracking-tighter text-white">Experience the Full OS</h2>
-                 <p className="text-indigo-400 font-black uppercase tracking-[0.3em] text-xs">Start your 7-Day Free Trial Today</p>
+                 <h2 className="text-4xl md:text-6xl font-black mb-4 font-heading tracking-tight text-white">Experience the full OS</h2>
+                 <p className="text-indigo-400 font-black uppercase tracking-[0.3em] text-xs">Start your 7-Day Free Trial today</p>
               </div>
               
               <div className="bg-white text-slate-900 border-4 border-indigo-600 rounded-[4rem] p-10 md:p-16 shadow-[0_0_100px_rgba(79,70,229,0.3)] relative overflow-hidden">
@@ -312,29 +312,29 @@ const App: React.FC = () => {
                             <span className="text-indigo-600 text-2xl font-black">✔️</span>
                             <div>
                                <p className="font-black text-xl uppercase leading-tight tracking-tighter">{item.title}</p>
-                               <p className="text-slate-500 text-sm font-medium italic">{item.description}</p>
+                               <p className="text-slate-500 text-sm font-medium">{item.description}</p>
                             </div>
                          </div>
-                         <div className="text-indigo-600 font-black text-sm uppercase italic tracking-widest">{item.value}</div>
+                         <div className="text-indigo-600 font-black text-sm uppercase tracking-widest">{item.value}</div>
                       </div>
                     ))}
                  </div>
                  
                  <div className="bg-slate-50 p-12 rounded-[2.5rem] border-4 border-dashed border-indigo-200 text-center relative">
-                    <p className="text-slate-500 font-black uppercase text-[10px] tracking-[0.4em] mb-6">LIMITED TIME TRIAL OFFER:</p>
+                    <p className="text-slate-500 font-black uppercase text-[10px] tracking-[0.4em] mb-6">Limited time trial offer:</p>
                     <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-10">
-                      <p className="text-7xl md:text-9xl font-black text-slate-900 font-heading tracking-tighter italic animate-pulse-subtle">FREE</p>
+                      <p className="text-7xl md:text-9xl font-black text-slate-900 font-heading tracking-tighter animate-pulse-subtle">FREE</p>
                       <div className="flex flex-col items-center md:items-start text-center md:text-left">
                         <div className="bg-emerald-500 text-white text-[16px] md:text-[18px] font-black px-6 py-2.5 rounded-full uppercase tracking-widest animate-float-badge shadow-2xl shadow-emerald-500/40 border-2 border-white">
                           / 7 Days Trial
                         </div>
-                        <span className="text-indigo-600 font-black uppercase text-[12px] tracking-widest mt-3 ml-1 bg-indigo-50 px-3 py-1 rounded">UNLIMITED ACCESS</span>
+                        <span className="text-indigo-600 font-black uppercase text-[12px] tracking-widest mt-3 ml-1 bg-indigo-50 px-3 py-1 rounded">Unlimited Access</span>
                       </div>
                     </div>
                     <button onClick={scrollToForm} className="cta-button w-full max-w-md py-8 rounded-2xl font-black text-2xl uppercase tracking-tighter shadow-[0_12px_0_#c4ab00] hover:scale-[1.02] transition-transform">
-                      CLAIM MY FREE TRIAL 🚀
+                      Claim my free trial
                     </button>
-                    <p className="mt-8 text-[11px] text-slate-400 font-black uppercase tracking-[0.2em]">No credit card required • Verified Agents Only • Instant Setup</p>
+                    <p className="mt-8 text-[11px] text-slate-400 font-black uppercase tracking-[0.2em]">No credit card required • Verified Agents Only</p>
                  </div>
               </div>
            </div>
@@ -344,10 +344,10 @@ const App: React.FC = () => {
         <section className="py-24 bg-white overflow-hidden">
            <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-24 items-center">
               <div className="text-left">
-                 <h2 className="text-5xl md:text-6xl font-black mb-8 leading-[1] font-heading uppercase italic tracking-tighter">
-                   Kast is currently onboarding <br/><span className="text-indigo-600 underline">limited agents.</span>
+                 <h2 className="text-5xl md:text-6xl font-black mb-8 leading-[1] font-heading tracking-tight">
+                   Limited availability <br/><span className="text-indigo-600 underline">for verified agents.</span>
                  </h2>
-                 <p className="text-xl text-slate-500 mb-12 font-medium italic">Apply for your 7-day free trial. Our team will verify your RERA status and activate your Growth OS within 12 hours.</p>
+                 <p className="text-xl text-slate-500 mb-12 font-medium">Apply for your 7-day free trial. Our team will verify your RERA status and activate your Growth OS within 12 hours.</p>
                  <div className="space-y-6">
                     <div className="p-6 bg-slate-50 rounded-2xl border-l-8 border-indigo-600">
                       <p className="font-black text-slate-900 uppercase">Risk-free trial (Full Features)</p>

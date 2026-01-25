@@ -30,7 +30,6 @@ const Footer: React.FC = () => {
            <div>© {new Date().getFullYear()} {BRAND_NAME} TECHNOLOGIES PVT LTD</div>
            <div className="flex gap-6">
               <span>MADE WITH ❤️ FOR INDIAN AGENTS</span>
-              <a href="https://ai.google.dev/gemini-api/docs/billing" target="_blank" className="hover:text-slate-400 underline">BILLING POLICY</a>
            </div>
         </div>
       </div>

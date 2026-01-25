@@ -30,13 +30,13 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
           </svg>
         </div>
-        <h3 className="text-3xl md:text-4xl font-black mb-6 uppercase tracking-tighter italic text-slate-900 leading-tight">Interest Recorded!</h3>
-        <p className="text-slate-600 font-bold text-lg mb-12 italic leading-relaxed max-w-sm mx-auto">
-          We have recorded your interest. Our verification team will connect with you on WhatsApp shortly to activate your 7-Day FREE Trial.
+        <h3 className="text-3xl md:text-4xl font-black mb-6 tracking-tighter text-slate-900 leading-tight">Interest recorded!</h3>
+        <p className="text-slate-600 font-bold text-lg mb-12 leading-relaxed max-w-sm mx-auto">
+          We have recorded your interest. Our verification team will connect with you on WhatsApp shortly to activate your 7-Day free trial.
         </p>
         <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald-50 rounded-full border border-emerald-100">
           <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-          <span className="text-[10px] font-black text-emerald-700 uppercase tracking-widest">Awaiting Verification</span>
+          <span className="text-[10px] font-black text-emerald-700 uppercase tracking-widest">Awaiting verification</span>
         </div>
         <div className="mt-12 pt-8 border-t border-slate-100">
           <button onClick={() => setSubmitted(false)} className="text-indigo-600 font-black uppercase text-xs tracking-widest hover:underline">Apply for another account</button>
@@ -48,8 +48,8 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
   return (
     <div id={id} className="bg-white p-10 rounded-2xl shadow-2xl border border-slate-100 relative">
       <div className="mb-8">
-        <h3 className="text-2xl font-black uppercase mb-1">Apply for 7-Day Free Trial</h3>
-        <p className="text-slate-500 text-xs font-bold uppercase tracking-widest italic">No Credit Card • Verified Agents Only</p>
+        <h3 className="text-2xl font-black uppercase mb-1">Apply for 7-Day trial</h3>
+        <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">No credit card • Verified agents only</p>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-5">
@@ -115,9 +115,9 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
             type="submit"
             className="cta-button w-full py-5 rounded-lg font-black text-xl uppercase tracking-tighter"
           >
-            START MY FREE TRIAL! 🚀
+            START MY FREE TRIAL!
           </button>
-          <p className="mt-4 text-[10px] text-center text-slate-400 font-bold uppercase">🔐 No credit card required. Instant Setup.</p>
+          <p className="mt-4 text-[10px] text-center text-slate-400 font-bold uppercase">No credit card required. Instant Setup.</p>
         </div>
       </form>
     </div>

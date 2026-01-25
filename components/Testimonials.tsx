@@ -7,8 +7,8 @@ const Testimonials: React.FC = () => {
     <section id="testimonials" className="py-24 px-4 bg-white border-y border-slate-100">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase font-heading mb-2">Verified Results</h2>
-          <p className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Don't just take our word for it</p>
+          <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase font-heading mb-2">Verified results</h2>
+          <p className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Real stories from the field</p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
