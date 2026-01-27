@@ -40,6 +40,11 @@ const App: React.FC = () => {
     }
   };
 
+  // Official Colorful Icons
+  const callIcon = "https://img.icons8.com/color/144/phone.png";
+  const whatsappBusinessIcon = "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg";
+  const portalIcon = "https://img.icons8.com/color/144/web.png";
+
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden font-sans">
       <Navbar />
@@ -78,35 +83,26 @@ const App: React.FC = () => {
             <div className="mb-16">
               <p className="font-black text-slate-400 uppercase tracking-widest text-sm mb-10 text-center">Your day already looks like this:</p>
               <div className="grid md:grid-cols-3 gap-8">
-                {/* Modernized Card 1 */}
+                {/* Modernized Card 1 - Call Icon */}
                 <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
-                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform">
-                    <svg className="w-10 h-10 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 7l2 2m0 0l2-2m-2 2v-6" className="text-rose-500 opacity-40" />
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform overflow-hidden p-4">
+                    <img src={callIcon} alt="Call" className="w-12 h-12 object-contain" />
                   </div>
                   <p className="font-bold text-slate-800 text-base leading-tight">Making calls nonstop</p>
                 </div>
 
-                {/* Modernized Card 2 */}
+                {/* Modernized Card 2 - WhatsApp Icon */}
                 <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
-                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform">
-                    <svg className="w-10 h-10 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 6v4m0 4v.01" className="text-emerald-500 opacity-40" />
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform overflow-hidden p-4">
+                    <img src={whatsappBusinessIcon} alt="WhatsApp" className="w-12 h-12 object-contain" />
                   </div>
                   <p className="font-bold text-slate-800 text-base leading-tight">WhatsApp messages piling up</p>
                 </div>
 
-                {/* Modernized Card 3 */}
+                {/* Modernized Card 3 - Portal Icon */}
                 <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
-                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform">
-                    <svg className="w-10 h-10 text-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v4m0 0l-2-2m2 2l2-2" className="text-indigo-600" />
-                    </svg>
+                  <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform overflow-hidden p-4">
+                    <img src={portalIcon} alt="Portals" className="w-12 h-12 object-contain" />
                   </div>
                   <p className="font-bold text-slate-800 text-base leading-tight">Enquiries from portals and ads</p>
                 </div>
@@ -226,7 +222,7 @@ const App: React.FC = () => {
                 <p className="font-bold text-lg text-slate-800 leading-tight">You step in with context and close the deals</p>
               </div>
             </div>
-            <p className="mt-20 text-slate-400 font-black uppercase tracking-[0.3em] text-[10px]">No new workflow. No extra tools.</p>
+            <p className="mt-20 text-red-600 font-black uppercase tracking-[0.3em] text-[10px]">No new workflow. No extra tools.</p>
           </div>
         </section>
 
@@ -334,7 +330,11 @@ const App: React.FC = () => {
                     <button onClick={scrollToForm} className="cta-button w-full max-w-md py-8 rounded-2xl font-black text-2xl uppercase tracking-tighter shadow-[0_12px_0_#c4ab00] hover:scale-[1.02] transition-transform">
                       Claim my free trial
                     </button>
-                    <p className="mt-8 text-[11px] text-slate-400 font-black uppercase tracking-[0.2em]">No credit card required • Verified Agents Only</p>
+                    <div className="mt-8 flex justify-center gap-4 text-[11px] font-black uppercase tracking-[0.2em]">
+                      <span className="text-red-600">No credit card required</span>
+                      <span className="text-slate-300">•</span>
+                      <span className="text-red-600">Verified Agents Only</span>
+                    </div>
                  </div>
               </div>
            </div>

@@ -48,12 +48,12 @@ const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
           >
             START YOUR 7-DAY FREE TRIAL
           </button>
-          <div className="flex gap-4 text-[10px] font-black uppercase text-slate-400 tracking-widest">
-            <span>No credit card required</span>
+          <div className="flex flex-wrap justify-center gap-4 text-[10px] font-black uppercase tracking-widest">
+            <span className="text-red-600">No credit card required</span>
             <span className="text-slate-300">•</span>
-            <span>Instant Activation</span>
+            <span className="text-red-600">Instant Activation</span>
             <span className="text-slate-300">•</span>
-            <span>Verified Agents Only</span>
+            <span className="text-red-600">Verified Agents Only</span>
           </div>
         </div>
       </div>

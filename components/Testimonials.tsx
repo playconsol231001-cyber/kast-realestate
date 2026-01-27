@@ -3,17 +3,23 @@ import React from 'react';
 import { TESTIMONIALS } from '../constants';
 
 const Testimonials: React.FC = () => {
+  // Duplicate testimonials for infinite loop effect
+  const duplicatedTestimonials = [...TESTIMONIALS, ...TESTIMONIALS];
+
   return (
-    <section id="testimonials" className="py-24 px-4 bg-white border-y border-slate-100">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase font-heading mb-2">Verified results</h2>
-          <p className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Real stories from the field</p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {TESTIMONIALS.map((t) => (
-            <div key={t.id} className="p-8 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow">
+    <section id="testimonials" className="py-24 bg-white border-y border-slate-100 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 mb-16 text-center">
+        <h2 className="text-3xl md:text-5xl font-black text-slate-900 uppercase font-heading mb-2">Verified results</h2>
+        <p className="text-indigo-600 font-bold uppercase tracking-widest text-sm">Real stories from the field</p>
+      </div>
+      
+      <div className="relative flex">
+        <div className="flex animate-scroll-left whitespace-nowrap gap-8">
+          {duplicatedTestimonials.map((t, idx) => (
+            <div 
+              key={`${t.id}-${idx}`} 
+              className="w-[350px] md:w-[450px] shrink-0 p-8 bg-white border border-slate-200 rounded-2xl shadow-sm hover:shadow-md transition-shadow whitespace-normal"
+            >
               <div className="flex gap-1 text-yellow-400 mb-6">
                 {[1, 2, 3, 4, 5].map(s => (
                   <svg key={s} className="w-4 h-4 fill-current" viewBox="0 0 20 20">
@@ -21,7 +27,7 @@ const Testimonials: React.FC = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-slate-700 font-medium text-lg leading-relaxed mb-8">"{t.content}"</p>
+              <p className="text-slate-700 font-medium text-lg leading-relaxed mb-8 italic">"{t.content}"</p>
               <div className="flex items-center gap-4">
                 <img src={t.avatar} alt={t.name} className="w-12 h-12 rounded-full border border-slate-100 object-cover" />
                 <div>

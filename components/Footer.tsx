@@ -18,7 +18,6 @@ const Footer: React.FC = () => {
              <a href="#how-it-works" className="hover:text-white">THE SYSTEM</a>
              <a href="#pricing" className="hover:text-white">PRICING</a>
              <a href="#who-it-is-for" className="hover:text-white">FOR WHO?</a>
-             <a href="#" className="hover:text-white">TERMS</a>
           </div>
           
           <p className="max-w-xl text-slate-500 text-sm font-medium">

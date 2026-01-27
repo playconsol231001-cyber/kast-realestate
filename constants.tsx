@@ -30,21 +30,21 @@ export const TESTIMONIALS: Testimonial[] = [
     name: "Ankit S.",
     role: "Gurgaon Specialist",
     content: "Earlier I had to remember which buyer asked about which property. Now Kast shows me everything before I reply.",
-    avatar: "https://i.pravatar.cc/150?u=ankit"
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&h=256&auto=format&fit=crop"
   },
   {
     id: 2,
     name: "Fareed",
     role: "West Delhi Broker",
     content: "I don’t miss enquiries anymore when I’m in site visits. That alone makes this useful.",
-    avatar: "https://i.pravatar.cc/150?u=fareed"
+    avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=256&h=256&auto=format&fit=crop"
   },
   {
     id: 3,
     name: "Rina",
     role: "Saket Agent",
     content: "I shared a resale listing on WhatsApp and got site visits without chasing.",
-    avatar: "https://i.pravatar.cc/150?u=rina"
+    avatar: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=256&h=256&auto=format&fit=crop"
   }
 ];
 
