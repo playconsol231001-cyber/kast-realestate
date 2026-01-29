@@ -210,11 +210,11 @@ const App: React.FC = () => {
             <div className="grid md:grid-cols-3 gap-16 relative">
               <div className="absolute top-1/2 left-0 w-full h-1 bg-slate-100 -z-10 hidden md:block"></div>
               <div className="bg-white px-4">
-                <div className="w-20 h-20 bg-slate-900 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">1</div>
+                <div className="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">1</div>
                 <p className="font-bold text-lg text-slate-800 leading-tight">Buyer enquires on WhatsApp or form</p>
               </div>
               <div className="bg-white px-4">
-                <div className="w-20 h-20 bg-slate-900 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">2</div>
+                <div className="w-20 h-20 bg-indigo-600 text-white rounded-full flex items-center justify-center text-2xl font-black mx-auto mb-8 border-4 border-white shadow-2xl">2</div>
                 <p className="font-bold text-lg text-slate-800 leading-tight">Kast replies instantly and keeps it moving</p>
               </div>
               <div className="bg-white px-4">

@@ -27,24 +27,24 @@ export const BENEFITS: Benefit[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: "Ankit S.",
-    role: "Gurgaon Specialist",
-    content: "Earlier I had to remember which buyer asked about which property. Now Kast shows me everything before I reply.",
-    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=256&h=256&auto=format&fit=crop"
+    name: "Rajesh Mehta",
+    role: "Real Estate Broker, Mumbai",
+    content: "KAST has completely improved the way I manage my property listings and clients. The app is smooth and professional and saves me a lot of time every day. Highly recommended for real estate professionals.",
+    avatar: "https://lh3.googleusercontent.com/d/1pPD8CpePRIYciAd1RschMhu-taOG3dbw"
   },
   {
     id: 2,
-    name: "Fareed",
-    role: "West Delhi Broker",
-    content: "I don’t miss enquiries anymore when I’m in site visits. That alone makes this useful.",
-    avatar: "https://images.unsplash.com/photo-1540569014015-19a7be504e3a?q=80&w=256&h=256&auto=format&fit=crop"
+    name: "Priya Sharma",
+    role: "Real Estate Consultant, Delhi NCR",
+    content: "I love how simple and powerful the KAST platform is. It helps me connect with buyers faster and keeps everything organized in one place. A must-have app for agents and brokers.",
+    avatar: "https://lh3.googleusercontent.com/d/1Z9r-73ofPgHvOD6sags_KpPYhDCcRSbz"
   },
   {
     id: 3,
-    name: "Rina",
-    role: "Saket Agent",
-    content: "I shared a resale listing on WhatsApp and got site visits without chasing.",
-    avatar: "https://images.unsplash.com/photo-1589156280159-27698a70f29e?q=80&w=256&h=256&auto=format&fit=crop"
+    name: "Amit Verma",
+    role: "Property Dealer, Bangalore",
+    content: "KAST is a game-changer for the real estate industry. The interface is user-friendly, and the features are exactly what we need to grow business faster. I’m very happy with the results.",
+    avatar: "https://lh3.googleusercontent.com/d/14UV31_-Ik32GH2yjR68Kn7R7Pp9BPJaL"
   }
 ];
 
