@@ -77,9 +77,9 @@
             animation: whatsapp-vibrate 0.3s ease-in-out infinite;
         }
 
-        /* Banner Marquee Animation */
+        /* Banner Marquee Animation - Fixed starting position for instant visibility */
         @keyframes marquee {
-            0% { transform: translateX(100%); }
+            0% { transform: translateX(0); }
             100% { transform: translateX(-100%); }
         }
 
@@ -125,6 +125,29 @@
         }
         .animate-success-pop {
           animation: success-pop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        /* AI Neural Pulse & Scanning Animations */
+        @keyframes neural-pulse {
+          0% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0.4); }
+          70% { box-shadow: 0 0 0 15px rgba(79, 70, 229, 0); }
+          100% { box-shadow: 0 0 0 0 rgba(79, 70, 229, 0); }
+        }
+        .animate-neural-pulse {
+          animation: neural-pulse 2s infinite;
+        }
+
+        @keyframes scanline {
+          0% { top: -100%; }
+          100% { top: 200%; }
+        }
+        .scanline {
+          position: absolute;
+          width: 100%;
+          height: 100px;
+          background: linear-gradient(to bottom, transparent, rgba(79, 70, 229, 0.1), transparent);
+          animation: scanline 4s linear infinite;
+          pointer-events: none;
         }
     </style>
 <script type="importmap">

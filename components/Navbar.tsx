@@ -13,25 +13,25 @@ const Navbar: React.FC = () => {
         </div>
       </div>
       <nav className="fixed top-8 left-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+        <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2 shrink-0">
             <div className="w-8 h-8 bg-indigo-600 rounded flex items-center justify-center">
               <span className="text-white font-black">K</span>
             </div>
-            <span className="font-black text-xl tracking-tighter text-slate-900 uppercase font-heading">{BRAND_NAME}</span>
+            <span className="font-black text-lg md:text-xl tracking-tighter text-slate-900 uppercase font-heading">{BRAND_NAME}</span>
           </div>
           
-          <div className="flex items-center gap-4 md:gap-8">
+          <div className="flex items-center gap-3 md:gap-8">
             <div className="hidden lg:flex items-center space-x-8">
               <a href="#how-it-works" className="text-xs font-bold text-slate-600 hover:text-indigo-600 uppercase">The System</a>
             </div>
             
-            <div className="flex items-center gap-2 md:gap-4">
+            <div className="flex items-center gap-3 md:gap-4">
               <a 
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:block text-[10px] font-black text-indigo-600 uppercase tracking-widest animate-pulse whitespace-nowrap hover:underline"
+                className="text-[9px] md:text-[10px] font-black text-indigo-600 uppercase tracking-widest animate-pulse whitespace-nowrap hover:underline"
               >
                 Join for free
               </a>
@@ -45,7 +45,7 @@ const Navbar: React.FC = () => {
                 <img 
                   src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
                   alt="WhatsApp" 
-                  className="h-10 md:h-12 w-auto drop-shadow-lg" 
+                  className="h-8 md:h-12 w-auto drop-shadow-lg" 
                 />
               </a>
             </div>

@@ -34,12 +34,28 @@ const LeadForm: React.FC<{ id?: string }> = ({ id }) => {
         <p className="text-slate-600 font-bold text-lg mb-12 leading-relaxed max-w-sm mx-auto">
           We have recorded your interest. Our verification team will connect with you on WhatsApp shortly to activate your 7-Day free trial.
         </p>
-        <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald-50 rounded-full border border-emerald-100">
+        <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald-50 rounded-full border border-emerald-100 mb-8">
           <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
           <span className="text-[10px] font-black text-emerald-700 uppercase tracking-widest">Awaiting verification</span>
         </div>
-        <div className="mt-12 pt-8 border-t border-slate-100">
-          <button onClick={() => setSubmitted(false)} className="text-indigo-600 font-black uppercase text-xs tracking-widest hover:underline">Apply for another account</button>
+        
+        <div className="mt-8 pt-8 border-t border-slate-100">
+          <a 
+            href="https://chat.whatsapp.com/LC10w1SkKoVHE8TQ8pIVG2" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-4 w-full py-6 bg-[#25D366] text-white rounded-2xl font-black uppercase text-sm md:text-base tracking-widest hover:bg-[#1da851] transition-all shadow-2xl shadow-green-200 active:scale-95 transform group"
+          >
+            <div className="animate-whatsapp">
+              <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" 
+                alt="WhatsApp" 
+                className="w-8 h-8 drop-shadow-md" 
+              />
+            </div>
+            <span>Join Growth Community</span>
+          </a>
+          <p className="mt-6 text-[10px] font-black text-slate-400 uppercase tracking-[0.3em]">Join 2,400+ Top Real Estate Agents</p>
         </div>
       </div>
     );

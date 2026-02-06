@@ -17,11 +17,11 @@ const Footer: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-10 text-xs font-black uppercase tracking-[0.2em] text-slate-400">
              <a href="#how-it-works" className="hover:text-white">THE SYSTEM</a>
              <a href="#pricing" className="hover:text-white">PRICING</a>
-             <a href="#who-it-is-for" className="hover:text-white">FOR WHO?</a>
+             <a href="#apply-form" className="hover:text-white">GET IN TOUCH</a>
           </div>
           
           <p className="max-w-xl text-slate-500 text-sm font-medium">
-            Kast is on a mission to empower 1,00,000+ real estate agents across India with official AI technology and business-grade automation.
+            Kast is on a mission to empower 1,0,000+ real estate agents across India with official AI technology and business-grade automation.
           </p>
         </div>
         

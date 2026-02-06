@@ -44,6 +44,11 @@ const App: React.FC = () => {
   const callIcon = "https://img.icons8.com/color/144/phone.png";
   const whatsappBusinessIcon = "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg";
   const portalIcon = "https://img.icons8.com/color/144/web.png";
+  
+  // Lead Gen Section Icons - Updated Step 01 icon for maximum visibility
+  const adsIcon = "https://img.icons8.com/fluency/144/megaphone.png";
+  const processorIcon = "https://img.icons8.com/fluency/144/database.png";
+  const successChatIcon = "https://img.icons8.com/fluency/144/whatsapp.png";
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden font-sans">
@@ -150,17 +155,29 @@ const App: React.FC = () => {
         <section className="py-24 bg-white text-center">
           <div className="max-w-4xl mx-auto px-4">
             <h2 className="text-4xl font-black mb-8 font-heading">Deals move on WhatsApp</h2>
-            <div className="p-12 bg-red-600 text-white rounded-[4rem] shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-8 opacity-10">
+            <div className="p-12 bg-slate-900 text-white rounded-[4rem] shadow-2xl relative overflow-hidden border border-slate-800">
+              <div className="absolute top-0 right-0 p-8 opacity-5">
                 <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.74.45 3.37 1.23 4.8L2 22l5.2-.82c1.43.78 3.06 1.23 4.8 1.23 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
               </div>
               <h3 className="text-2xl md:text-3xl font-black mb-6">But personal WhatsApp isn't built for business.</h3>
-              <p className="text-red-100 font-bold mb-10 text-lg">Personal systems aren't designed for high-volume professional follow-ups.</p>
+              <p className="text-slate-400 font-bold mb-10 text-lg">Personal systems aren't designed for high-volume professional follow-ups.</p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div className="p-4 bg-white/10 rounded-2xl border border-white/20 text-xs font-black uppercase tracking-tighter">Chats get buried</div>
-                <div className="p-4 bg-white/10 rounded-2xl border border-white/20 text-xs font-black uppercase tracking-tighter">Depends on memory</div>
-                <div className="p-4 bg-white/10 rounded-2xl border border-white/20 text-xs font-black uppercase tracking-tighter">Context gets lost</div>
-                <div className="p-4 bg-white/10 rounded-2xl border border-white/20 text-xs font-black uppercase tracking-tighter">Work-life mess</div>
+                <div className="flex items-center justify-center gap-2 p-4 bg-red-600 rounded-2xl border border-red-500 text-xs font-black uppercase tracking-tighter shadow-lg shadow-red-900/20">
+                  <span className="text-[14px]">✖</span>
+                  <span>Chats get buried</span>
+                </div>
+                <div className="flex items-center justify-center gap-2 p-4 bg-red-600 rounded-2xl border border-red-500 text-xs font-black uppercase tracking-tighter shadow-lg shadow-red-900/20">
+                  <span className="text-[14px]">✖</span>
+                  <span>Depends on memory</span>
+                </div>
+                <div className="flex items-center justify-center gap-2 p-4 bg-red-600 rounded-2xl border border-red-500 text-xs font-black uppercase tracking-tighter shadow-lg shadow-red-900/20">
+                  <span className="text-[14px]">✖</span>
+                  <span>Context gets lost</span>
+                </div>
+                <div className="flex items-center justify-center gap-2 p-4 bg-red-600 rounded-2xl border border-red-500 text-xs font-black uppercase tracking-tighter shadow-lg shadow-red-900/20">
+                  <span className="text-[14px]">✖</span>
+                  <span>Work-life mess</span>
+                </div>
               </div>
             </div>
           </div>
@@ -180,21 +197,42 @@ const App: React.FC = () => {
                   <p className="text-indigo-600 font-black text-2xl uppercase">Picking up where you left off.</p>
                 </div>
               </div>
-              <div className="p-10 bg-white border-2 border-slate-900 rounded-[3rem] shadow-2xl">
-                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-8">AI Continuity Workflow:</p>
-                <div className="space-y-10">
-                  <div className="flex gap-6">
-                    <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black">01</div>
-                    <p className="font-bold text-slate-800">By the time you're back, you already know who the buyer is.</p>
+              <div className="p-10 bg-white border-2 border-slate-900 rounded-[3rem] shadow-2xl relative overflow-hidden group">
+                {/* Neural Scan Interface */}
+                <div className="scanline"></div>
+                <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_transparent_0%,_rgba(79,70,229,0.02)_100%)] pointer-events-none"></div>
+                
+                <div className="flex items-center justify-between mb-8 border-b border-slate-100 pb-6">
+                  <div className="flex items-center gap-3">
+                    <div className="w-3 h-3 bg-indigo-600 rounded-full animate-neural-pulse"></div>
+                    <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600">AI Processing Active</span>
                   </div>
-                  <div className="flex gap-6">
-                    <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black">02</div>
-                    <p className="font-bold text-slate-800">You know what they want and what's been discussed.</p>
+                  <div className="text-[10px] font-black uppercase tracking-widest text-slate-400">System Link v2.5</div>
+                </div>
+
+                <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mb-8">Continuity Protocol:</p>
+                <div className="space-y-10 relative">
+                  <div className="flex gap-6 group/item">
+                    <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black shadow-lg shadow-indigo-200 group-hover/item:scale-110 transition-transform">01</div>
+                    <p className="font-bold text-slate-800 leading-snug">By the time you're back, you already know who the buyer is.</p>
                   </div>
-                  <div className="flex gap-6">
-                    <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black">03</div>
-                    <p className="font-bold text-slate-800">You pick up the conversation at the right point.</p>
+                  <div className="flex gap-6 group/item">
+                    <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black shadow-lg shadow-indigo-200 group-hover/item:scale-110 transition-transform">02</div>
+                    <p className="font-bold text-slate-800 leading-snug">You know what they want and what's been discussed.</p>
                   </div>
+                  <div className="flex gap-6 group/item">
+                    <div className="shrink-0 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-black shadow-lg shadow-indigo-200 group-hover/item:scale-110 transition-transform">03</div>
+                    <p className="font-bold text-slate-800 leading-snug">You pick up the conversation at the right point.</p>
+                  </div>
+                </div>
+
+                <div className="mt-12 pt-6 border-t border-slate-100 flex items-center justify-between">
+                   <div className="flex gap-1">
+                      <div className="w-1 h-4 bg-indigo-200 rounded-full animate-pulse"></div>
+                      <div className="w-1 h-6 bg-indigo-400 rounded-full animate-pulse delay-75"></div>
+                      <div className="w-1 h-3 bg-indigo-600 rounded-full animate-pulse delay-150"></div>
+                   </div>
+                   <span className="text-[9px] font-black text-slate-300 uppercase tracking-widest">Neural Sync Optimized</span>
                 </div>
               </div>
             </div>
@@ -226,26 +264,81 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* LEAD GENERATION EXTRA */}
-        <section className="py-24 bg-indigo-600 text-white text-center">
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl md:text-5xl font-black mb-8 font-heading leading-tight">Managed Lead Generation <br/>for Kast Users</h2>
-            <p className="text-xl text-indigo-100 mb-12 max-w-2xl mx-auto font-medium">For agents who want more inbound enquiries, Kast offers managed lead gen ads.</p>
-            <div className="grid md:grid-cols-3 gap-8 text-left mb-12">
-              <div className="p-8 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-md">
-                <p className="font-black text-indigo-300 mb-4 uppercase text-xs tracking-widest">Step 01</p>
-                <p className="font-bold text-lg">We run ads on your behalf</p>
+        {/* LEAD GENERATION EXTRA - REDESIGNED MODERN PIPELINE */}
+        <section className="py-32 bg-[#05070a] text-white overflow-hidden relative">
+          {/* Accent Glows */}
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[120px] -z-10"></div>
+          <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-cyan-600/5 rounded-full blur-[120px] -z-10"></div>
+
+          <div className="max-w-7xl mx-auto px-4 relative">
+            <div className="text-center mb-24">
+              <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-indigo-500/10 border border-indigo-500/20">
+                <span className="text-[10px] font-black uppercase tracking-[0.3em] text-indigo-400">Exclusive Growth Engine</span>
               </div>
-              <div className="p-8 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-md">
-                <p className="font-black text-indigo-300 mb-4 uppercase text-xs tracking-widest">Step 02</p>
-                <p className="font-bold text-lg">Enquiries come directly into Kast</p>
-              </div>
-              <div className="p-8 bg-white/10 border border-white/20 rounded-3xl backdrop-blur-md">
-                <p className="font-black text-indigo-300 mb-4 uppercase text-xs tracking-widest">Step 03</p>
-                <p className="font-bold text-lg">Leads are handled on WhatsApp</p>
+              <h2 className="text-4xl md:text-7xl font-black mb-8 font-heading leading-tight tracking-tight">
+                Managed <span className="text-gradient">Lead Generation</span> <br/>for Kast Users
+              </h2>
+              <p className="text-xl text-slate-400 mb-12 max-w-3xl mx-auto font-medium leading-relaxed">
+                For agents who want more inbound enquiries, Kast offers managed lead gen ads. We build, launch, and optimize your entire property marketing funnel.
+              </p>
+            </div>
+
+            {/* Pipeline Visualization */}
+            <div className="relative">
+              {/* Connecting Desktop Flow Line */}
+              <div className="absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent -z-10 hidden md:block"></div>
+              
+              <div className="grid md:grid-cols-3 gap-12">
+                {/* Step 01 Card */}
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-b from-indigo-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative p-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] h-full flex flex-col items-center text-center hover:-translate-y-12 hover:scale-[1.05] transition-all duration-500 ease-out cursor-default shadow-2xl shadow-transparent hover:shadow-indigo-500/10">
+                    <div className="absolute top-6 left-10 text-6xl font-black text-white/5 select-none italic">01</div>
+                    <div className="w-24 h-24 mb-10 bg-white rounded-3xl p-5 flex items-center justify-center shadow-2xl group-hover:rotate-6 transition-transform">
+                      <img src={adsIcon} alt="Ads" className="w-full h-full object-contain" />
+                    </div>
+                    <p className="text-[10px] font-black text-indigo-400 uppercase tracking-[0.3em] mb-4">Traffic Acquisition</p>
+                    <h3 className="text-2xl font-black leading-tight">We run ads on your behalf</h3>
+                    <p className="mt-4 text-slate-500 text-sm font-medium">Expert-crafted Facebook & Instagram campaigns targeting real property buyers.</p>
+                  </div>
+                </div>
+
+                {/* Step 02 Card */}
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-b from-indigo-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative p-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] h-full flex flex-col items-center text-center hover:-translate-y-12 hover:scale-[1.05] transition-all duration-500 ease-out cursor-default shadow-2xl shadow-transparent hover:shadow-indigo-500/10">
+                    <div className="absolute top-6 left-10 text-6xl font-black text-white/5 select-none italic">02</div>
+                    <div className="w-24 h-24 mb-10 bg-white rounded-3xl p-5 flex items-center justify-center shadow-2xl group-hover:rotate-6 transition-transform">
+                      <img src={processorIcon} alt="System" className="w-full h-full object-contain" />
+                    </div>
+                    <p className="text-[10px] font-black text-indigo-400 uppercase tracking-[0.3em] mb-4">Centralized Processing</p>
+                    <h3 className="text-2xl font-black leading-tight">Enquiries come directly into Kast</h3>
+                    <p className="mt-4 text-slate-500 text-sm font-medium">Instant ingestion with property details and lead score automatically mapped.</p>
+                  </div>
+                </div>
+
+                {/* Step 03 Card */}
+                <div className="relative group">
+                  <div className="absolute -inset-2 bg-gradient-to-b from-emerald-500/20 to-transparent rounded-[2.5rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative p-10 bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2.5rem] h-full flex flex-col items-center text-center hover:-translate-y-12 hover:scale-[1.05] transition-all duration-500 ease-out cursor-default shadow-2xl shadow-transparent hover:shadow-emerald-500/10">
+                    <div className="absolute top-6 left-10 text-6xl font-black text-white/5 select-none italic">03</div>
+                    <div className="w-24 h-24 mb-10 bg-white rounded-3xl p-5 flex items-center justify-center shadow-2xl group-hover:rotate-6 transition-transform">
+                      <img src={successChatIcon} alt="WhatsApp" className="w-full h-full object-contain" />
+                    </div>
+                    <p className="text-[10px] font-black text-emerald-400 uppercase tracking-[0.3em] mb-4">Conversion Core</p>
+                    <h3 className="text-2xl font-black leading-tight">Leads are handled on WhatsApp</h3>
+                    <p className="mt-4 text-slate-500 text-sm font-medium">Auto-replies engage the buyer in seconds, ensuring you never miss a hot lead.</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <p className="text-indigo-200 font-black uppercase tracking-widest text-[10px]">Available only for active Kast users.</p>
+
+            <div className="mt-24 text-center">
+              <div className="inline-flex items-center gap-4 p-5 bg-white/5 border border-white/10 rounded-2xl">
+                <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                <p className="text-indigo-200 font-black uppercase tracking-widest text-[11px]">Premium service — Available only for active Kast users.</p>
+              </div>
+            </div>
           </div>
         </section>
 
