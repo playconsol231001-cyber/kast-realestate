@@ -45,10 +45,8 @@ const App: React.FC = () => {
   const whatsappBusinessIcon = "https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg";
   const portalIcon = "https://img.icons8.com/color/144/web.png";
   
-  // Lead Gen Section Icons
-  const adsIcon = "https://img.icons8.com/fluency/144/megaphone.png";
-  const processorIcon = "https://img.icons8.com/fluency/144/database.png";
-  const successChatIcon = "https://img.icons8.com/fluency/144/whatsapp.png";
+  // Premium Red Cross Icon
+  const redCrossIcon = "https://img.icons8.com/ios-filled/100/dc2626/x.png";
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 overflow-x-hidden font-sans">
@@ -57,9 +55,9 @@ const App: React.FC = () => {
       <main>
         <Hero onCtaClick={scrollToForm} />
 
-        {/* FOMO NOTICE */}
+        {/* FOMO NOTICE - Visible only on Desktop (md and up) */}
         {fomoNotice && (
-          <div className="fixed bottom-6 left-6 z-[100] animate-bounce">
+          <div className="fixed bottom-6 left-6 z-[100] animate-bounce hidden md:block">
             <div className="bg-white border-2 border-slate-900 p-4 rounded-xl shadow-2xl flex items-center gap-4 max-w-xs transition-all">
               <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 shrink-0">⚡</div>
               <div>
@@ -80,13 +78,13 @@ const App: React.FC = () => {
         {/* THE REAL PROBLEM SECTION */}
         <section className="py-24 bg-white">
           <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl md:text-5xl font-black mb-12 font-heading text-center leading-tight">
+            <h2 className="text-4xl md:text-5xl font-black mb-12 font-heading text-center leading-tight text-slate-900">
               The real problem isn't leads. <br/>
-              <span className="text-indigo-600 underline">It's identifying the true closers.</span>
+              <span className="text-indigo-600 underline decoration-indigo-200 underline-offset-8">It's identifying the true closers.</span>
             </h2>
             
             <div className="mb-16 text-center">
-              <p className="font-black text-slate-400 uppercase tracking-widest text-sm mb-10">Your day already looks like this:</p>
+              <p className="font-black text-slate-400 uppercase tracking-widest text-xs mb-10">Your day already looks like this:</p>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="p-10 bg-rose-50/50 rounded-[2.5rem] border border-rose-100/50 text-center group hover:bg-rose-50 transition-all duration-300">
                   <div className="w-20 h-20 bg-white rounded-3xl shadow-lg shadow-rose-200/50 flex items-center justify-center mx-auto mb-8 transform group-hover:-translate-y-2 transition-transform overflow-hidden p-4">
@@ -119,31 +117,51 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        {/* DEALS MOVE ON WHATSAPP */}
+        {/* ULTRA PREMIUM DEALS SECTION */}
         <section className="py-24 bg-white text-center">
-          <div className="max-w-4xl mx-auto px-4">
-            <h2 className="text-4xl font-black mb-8 font-heading">Deals move on WhatsApp</h2>
-            <div className="p-12 md:p-20 bg-slate-900 text-white rounded-[4rem] shadow-2xl relative overflow-hidden border border-slate-800">
-              <div className="absolute top-0 right-0 p-8 opacity-5">
-                <svg className="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.74.45 3.37 1.23 4.8L2 22l5.2-.82c1.43.78 3.06 1.23 4.8 1.23 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
-              </div>
-              <h3 className="text-2xl md:text-4xl font-black mb-6 leading-tight">But personal WhatsApp isn't built for business.</h3>
-              <p className="text-slate-400 font-bold mb-16 text-lg max-w-2xl mx-auto">Personal systems aren't designed for high-volume professional follow-ups.</p>
+          <div className="max-w-5xl mx-auto px-4">
+            <div className="p-12 md:p-24 bg-[#05070a] text-white rounded-[4rem] shadow-2xl relative overflow-hidden border border-white/5 ring-1 ring-white/10">
+              {/* Subtle Premium Background Elements */}
+              <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-600/5 blur-[120px] rounded-full -mr-48 -mt-48"></div>
+              <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-red-600/5 blur-[100px] rounded-full -ml-32 -mb-32"></div>
               
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-                {[
-                  "Chats get buried",
-                  "Depends on memory",
-                  "Context gets lost",
-                  "Work-life mess"
-                ].map((text, i) => (
-                  <div key={i} className="flex flex-col items-center justify-center gap-4 p-8 bg-white/5 rounded-[2.5rem] border border-white/10 shadow-2xl hover:bg-white/10 transition-all group">
-                    <div className="w-14 h-14 rounded-2xl bg-red-600/10 flex items-center justify-center border border-red-600/20 mb-2 shadow-[0_0_20px_rgba(220,38,38,0.1)] group-hover:scale-110 transition-transform">
-                       <span className="text-3xl text-red-500 font-black drop-shadow-[0_0_10px_rgba(239,68,68,0.5)]">✖</span>
+              <div className="relative z-10">
+                <div className="inline-block px-4 py-2 rounded-full bg-red-500/10 border border-red-500/20 text-red-500 text-[10px] font-black uppercase tracking-[0.3em] mb-10 shadow-[0_0_20px_rgba(239,68,68,0.1)]">
+                  System Audit: Critical Efficiency Gaps
+                </div>
+                <h3 className="text-4xl md:text-6xl font-black mb-6 leading-[1.05] font-heading tracking-tight text-white">
+                  But personal WhatsApp <br/>isn't built for business.
+                </h3>
+                <p className="text-slate-400 font-bold mb-16 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+                  Personal systems aren't designed for high-volume professional follow-ups.
+                </p>
+                
+                {/* Refined Problem List - Red Text Left, Red Image Icon Right */}
+                <div className="grid md:grid-cols-2 gap-x-16 gap-y-2 max-w-4xl mx-auto">
+                  {[
+                    "Chats get buried",
+                    "Depends on memory",
+                    "Context gets lost",
+                    "Work-life mess"
+                  ].map((text, i) => (
+                    <div key={i} className="flex items-center justify-between py-6 border-b border-white/10 group transition-all duration-500">
+                      <span className="text-lg md:text-xl font-[1000] uppercase tracking-tighter text-red-600 group-hover:text-red-500 transition-colors">
+                        {text}
+                      </span>
+                      <div className="flex items-center">
+                        <img 
+                          src={redCrossIcon} 
+                          alt="No" 
+                          className="w-8 h-8 md:w-10 md:h-10 drop-shadow-[0_0_15px_rgba(220,38,38,0.7)] animate-pulse object-contain"
+                        />
+                      </div>
                     </div>
-                    <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-slate-300 group-hover:text-white transition-colors">{text}</span>
-                  </div>
-                ))}
+                  ))}
+                </div>
+                
+                <div className="mt-20 pt-10 border-t border-white/5 opacity-50">
+                  <p className="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">Kast Intelligence Unit — Internal Assessment</p>
+                </div>
               </div>
             </div>
           </div>
@@ -211,7 +229,7 @@ const App: React.FC = () => {
         {/* PRICING */}
         <section id="pricing" className="py-24 bg-slate-900 text-white relative">
            <div className="max-w-4xl mx-auto px-4 relative z-10 text-center">
-              <h2 className="text-4xl md:text-6xl font-black mb-12 font-heading tracking-tight text-white">Experience the full OS</h2>
+              <h2 className="text-4xl md:text-6xl font-black mb-12 font-heading tracking-tight text-white text-center">Experience the full OS</h2>
               <div className="bg-white text-slate-900 border-4 border-indigo-600 rounded-[4rem] p-10 md:p-16 shadow-2xl">
                  <div className="space-y-8 mb-16">
                     {OFFER_INCLUDES.map((item, i) => (
@@ -249,7 +267,7 @@ const App: React.FC = () => {
            <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-24 items-center">
               <div className="text-left">
                  <h2 className="text-5xl md:text-6xl font-black mb-8 leading-[1] font-heading tracking-tight">
-                   Limited availability <br/><span className="text-indigo-600 underline">for verified agents.</span>
+                   Limited availability <br/><span className="text-indigo-600 underline decoration-indigo-200">for verified agents.</span>
                  </h2>
                  <p className="text-xl text-slate-500 mb-12 font-medium">Apply for your 7-day free trial. Our team will verify your RERA status and activate your Growth OS within 12 hours.</p>
                  <div className="space-y-6">
